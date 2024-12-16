@@ -1,4 +1,4 @@
-<html><head><base href="." /><title>Faisal Hanif</title><style>
+<html><head><base href="."><title>FAISAL HANIF</title><style>
 :root {
   --primary: #1dbf73;
   --dark: #404145;
@@ -976,534 +976,485 @@ body {
   bottom: -15px;
 }
 
-.whatsapp-section {
+.skills-showcase {
+  padding: 4rem 0;
   background: linear-gradient(145deg, #ffffff, #f8f9ff);
-  padding: 4rem 2rem;
-  text-align: center;
-  margin: 2rem 0;
-  position: relative;
-  overflow: hidden;
 }
 
-.whatsapp-container {
-  max-width: 600px;
+.skills-container {
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 2rem;
+}
+
+.skill-category {
+  margin-bottom: 3rem; 
+}
+
+.skill-category h3 {
+  color: var(--dark);
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.skill-category h3:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), #2ce88e);
+  border-radius: 2px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.skill-item {
+  text-align: center;
+  transition: transform 0.3s;
+  padding: 1.5rem;
   background: white;
-  padding: 3rem;
-  border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-  position: relative;
-  z-index: 2;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
-.whatsapp-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 1rem;
-  background: #25D366;
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 50px;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-top: 2rem;
-  transition: all 0.3s;
-  position: relative;
-  overflow: hidden;
-  animation: pulse 2s infinite;
-}
-
-.whatsapp-btn:hover {
+.skill-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
 }
 
-.whatsapp-icon {
+.skill-ring {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.skill-ring svg {
+  transform: rotate(-90deg);
+  filter: drop-shadow(0 0 10px rgba(29, 191, 115, 0.2));
+}
+
+.skill-ring-bg {
+  fill: none;
+  stroke: #eef1f5;
+  stroke-width: 8;
+}
+
+.skill-ring-progress {
+  fill: none;
+  stroke: url(#gradient);
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-dasharray: 283;
+  stroke-dashoffset: 283;
+  transition: stroke-dashoffset 1.5s ease-in-out;
+}
+
+.skill-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.skill-percent {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, var(--primary), #2ce88e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.25rem;
+}
+
+.skill-name {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--dark);
+  margin-top: 0.25rem;
+}
+
+.skill-icon {
   width: 24px;
   height: 24px;
-  fill: white;
-}
-
-.whatsapp-bubbles {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
-.whatsapp-bubble {
-  position: absolute;
-  background: rgba(37, 211, 102, 0.1);
-  border-radius: 50%;
-  animation: float-bubble 3s infinite;
-}
-
-@keyframes float-bubble {
-  0%, 100% {
-    transform: translateY(0) scale(1);
-    opacity: 0.5;
-  }
-  50% {
-    transform: translateY(-20px) scale(1.1);
-    opacity: 0.2;
-  }
-}
-
-.footer {
-  background: var(--dark);
-  color: white;
-  padding: 4rem 0;
-  margin-top: 4rem;
-}
-
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  padding: 0 2rem;
-}
-
-.footer-section h3 {
-  margin-bottom: 1rem;
-  color: var(--primary);
-}
-
-.footer-section p, .footer-section a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0.5rem 0;
-  display: block;
-}
-
-.social-links {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.social-links a {
-  color: white;
-  font-size: 1.5rem;
-}
-
-.timeline-item {
-  text-align: center;
-  padding: 2rem;
-  background: white;
-  border-radius: 10px;
-  position: relative;
-}
-
-.dashboard {
-  background: white;
-  border-radius: 10px;
-  padding: 2rem;
-  margin: 4rem auto;
-  max-width: 1200px;
-}
-
-.dashboard-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-}
-
-.dashboard-card {
-  background: var(--light);
-  padding: 1.5rem;
-  border-radius: 8px;
-  text-align: center;
-  animation: fadeUp 0.5s ease-out forwards;
-  opacity: 0;
-  animation-delay: calc(var(--delay, 0) * 0.2s);
-}
-
-.dashboard-value {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: var(--primary);
-  margin: 1rem 0;
-}
-
-.dashboard-label {
-  color: var(--dark);
-  font-size: 1.1rem;
-}
-
-.growth-indicator {
-  color: #18a563;
-  font-size: 0.9rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-}
-
-.chart {
-  height: 60px;
-  margin-top: 1rem;
-  display: flex;
-  align-items: flex-end;
-  gap: 4px;
-}
-
-.chart-bar {
-  flex: 1;
-  background: var(--primary);
-  opacity: 0.8;
-  transition: height 0.3s;
-}
-
-@keyframes slideUp {
-  from { transform: translateY(20px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
-
-.coin {
-  position: fixed;
-  width: 20px;
-  height: 20px;
-  color: var(--primary);
-  z-index: 1;
-  pointer-events: none;
-}
-
-.coin svg {
-  width: 100%;
-  height: 100%;
-}
-
-@media (max-width: 768px) {
-  .showcase-container {
-    flex-direction: column;
-  }
-  
-  .image-placeholder {
-    height: 300px;
-  }
-}
-
-.showcase-container {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  margin: 2rem auto;
-}
-
-.showcase-item {
-  flex: 0 0 300px; /* Fixed width */
-}
-
-.image-placeholder {
-  width: 300px;
-  height: 300px; /* Make it square 1:1 */
-  background: var(--light);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  position: relative;
-}
-
-.platform-stats {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin: 4rem auto;
-  max-width: 1200px;
-  padding: 0 2rem;
-}
-
-.platform-card {
-  flex: 1;
-  min-width: 200px;
-  max-width: 280px;
-  perspective: 1000px;
-}
-
-.platform-icon svg {
-  width: 48px;
-  height: 48px;
+  margin: 0 auto 1rem;
   fill: var(--primary);
 }
 
-.platform-icon.whatsapp {
-  color: #25D366;
-}
-
-.platform-icon.linkedin {
-  color: #0A66C2;
-}
-
-.platform-icon.fiverr {
-  color: #1DBF73;
-}
-
-.platform-icon.upwork {
-  color: #6FDA44;
-}
-
-.celebration {
-  position: absolute;
-  font-size: 2rem;
-  animation: celebrate 1s infinite;
-  opacity: 0;
-}
-
-@keyframes celebrate {
-  0% {
-    transform: translate(-50%, -100%) scale(0);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: translate(-50%, -200%) scale(1.5);
-    opacity: 0;
-  }
-}
-
-/* Add counter animation */
-.number-animate {
-  animation: countUp 2s ease-out forwards;
-}
-
-@keyframes countUp {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-/* New styles for growth showcase */
-.growth-showcase {
-  padding: 4rem 0;
-  background: linear-gradient(145deg, #ffffff, #f8f9ff);
-  margin: 2rem 0;
-}
-
-.growth-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-.growth-comparison {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
-  background: white;
-  border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
-}
-
-.growth-before, .growth-after {
-  flex: 1;
-  text-align: center;
-  padding: 2rem;
-  border-radius: 15px;
-  position: relative;
-  overflow: hidden;
-}
-
-.growth-before {
-  background: #f5f5f5;
-}
-
-.growth-after {
-  background: #e8f9f0;
-}
-
-.growth-arrow {
-  animation: pulse 2s infinite;
-}
-
-.growth-chart {
-  height: 200px;
-  display: flex;
-  align-items: flex-end;
-  gap: 10px;
-  margin: 2rem 0;
-}
-
-.growth-chart .chart-bar {
-  flex: 1;
-  background: var(--primary);
-  border-radius: 10px 10px 0 0;
-  transition: height 1s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.growth-before .chart-bar {
-  background: #999;
-}
-
-.growth-stats {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.growth-stats strong {
-  font-size: 1.5rem;
-  color: var(--primary);
-}
-
-/* Updated Process Section Styles */
-.process {
-  background: linear-gradient(145deg, #ffffff, #f8f9ff);
-  padding: 4rem 0;
-  position: relative;
-  overflow: hidden;
-}
-
-.timeline {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-  position: relative;
-}
-
-.timeline::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, var(--primary), #2ce88e);
-  z-index: 1;
-}
-
-.timeline-item {
-  position: relative;
-  z-index: 2;
-  background: white;
-  padding: 2rem;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
-  width: 250px;
-}
-
-.timeline-item:hover {
-  transform: translateY(-10px);
-}
-
-.timeline-number {
-  width: 50px;
-  height: 50px;
-  background: var(--primary);
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
-  margin: 0 auto 1rem;
-  position: relative;
-  z-index: 2;
-  transition: all 0.3s;
-}
-
-/* Updated Journey Section Styles */
-.success-roadmap {
+.process-workflow {
   padding: 6rem 0;
   background: linear-gradient(145deg, #ffffff, #f8f9ff);
   position: relative;
   overflow: hidden;
 }
 
-.roadmap-container {
-  max-width: 1200px;
+.workflow-container {
+  max-width: 1000px;
   margin: 0 auto;
   padding: 2rem;
   position: relative;
 }
 
-.roadmap-line {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--primary), #2ce88e);
-  transform: translateY(-50%);
+.workflow-timeline {
+  position: relative;
+  padding: 2rem 0;
 }
 
-.roadmap-spark {
+.workflow-timeline::before {
+  content: '';
   position: absolute;
-  width: 20px;
-  height: 20px;
+  left: 32px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--primary) 0%, #2ce88e 100%);
+  opacity: 0.3;
+}
+
+.workflow-item {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 0.6s ease;
+}
+
+.workflow-item.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.workflow-icon {
+  animation: iconPulse 2s infinite;
+}
+
+.workflow-content h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.workflow-details li {
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.workflow-details li:hover {
+  background: rgba(29, 191, 115, 0.1);
+  transform: translateX(5px);
+}
+
+@keyframes iconPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.workflow-progress {
+  background: linear-gradient(90deg, var(--primary), #2ce88e);
+}
+
+.workflow-item::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
   background: var(--primary);
   border-radius: 50%;
-  filter: blur(5px);
-  animation: spark 1.5s linear infinite;
+  left: 24.5px;
+  top: 24.5px;
+  z-index: 2;
+  box-shadow: 0 0 15px rgba(29, 191, 115, 0.5);
+  animation: glow 2s infinite;
 }
 
-@keyframes spark {
-  0% {
-    transform: scale(0) translateX(0);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.5) translateX(100px);
-    opacity: 0;
-  }
+@keyframes glow {
+  0% { box-shadow: 0 0 15px rgba(29, 191, 115, 0.5); }
+  50% { box-shadow: 0 0 25px rgba(29, 191, 115, 0.8); }
+  100% { box-shadow: 0 0 15px rgba(29, 191, 115, 0.5); }
 }
 
-.roadmap-item {
-  background: white;
+/* Custom Service Bundles */
+.service-bundles {
+  padding: 4rem 0;
+  background: linear-gradient(145deg, #ffffff, #f8f9ff);
+}
+
+.bundle-container {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.bundle-card {
+  background: white;
   border-radius: 15px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
   position: relative;
+  overflow: hidden;
+}
+
+.bundle-card:hover {
+  transform: translateY(-10px);
+}
+
+.bundle-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--primary), #2ce88e);
+}
+
+.bundle-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.bundle-price {
+  font-size: 2.5rem;
+  color: var(--primary);
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.bundle-features {
+  list-style: none;
   margin: 2rem 0;
+}
+
+.bundle-features li {
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bundle-features li svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--primary);
+}
+
+/* AI Tools Section */
+.ai-tools {
+  padding: 4rem 0;
+}
+
+.ai-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.ai-tool-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: all 0.3s;
+}
+
+.ai-tool-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.ai-tool-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem;
+  fill: var(--primary);
+}
+
+/* Media Gallery */
+.media-gallery {
+  padding: 4rem 0;
+  background: linear-gradient(145deg, #ffffff, #f8f9ff);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: transform 0.3s;
 }
 
-.roadmap-item:hover {
-  transform: translateY(-5px);
+.gallery-item:hover img {
+  transform: scale(1.1);
 }
 
-.roadmap-item::before {
-  content: '';
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  background: var(--primary);
-  border-radius: 50%;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 5px solid white;
-  box-shadow: 0 0 20px rgba(29, 191, 115, 0.3);
+/* Awards Section */
+.awards {
+  padding: 4rem 0;
 }
 
-.roadmap-item:nth-child(odd)::before {
-  top: -15px;
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-.roadmap-item:nth-child(even)::before {
-  bottom: -15px;
+.award-card {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.award-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1rem;
+  fill: var(--primary);
+}
+
+/* Case Studies */
+.case-studies {
+  padding: 4rem 0;
+  background: linear-gradient(145deg, #ffffff, #f8f9ff);
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.case-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.case-image {
+  height: 200px;
+  background: var(--light);
+}
+
+.case-content {
+  padding: 2rem;
+}
+
+/* Blog Section */
+.blog {
+  padding: 4rem 0;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.blog-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.blog-image {
+  height: 200px;
+  background: var(--light);
+}
+
+.blog-content {
+  padding: 2rem;
+}
+
+/* FAQ Section */
+.faq {
+  padding: 4rem 0;
+  background: linear-gradient(145deg, #ffffff, #f8f9ff);
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.faq-item {
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.faq-question {
+  padding: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.faq-answer {
+  padding: 0 1.5rem;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s;
+}
+
+.faq-item.active .faq-answer {
+  height: auto;
+  padding: 1.5rem;
 }
 </style></head><body>
   <header class="header">
     <nav class="nav">
       <div class="logo">Faisal<span>Hanif</span></div>
-      <a href="https://www.fiverr.com/contact" class="cta-btn">Contact Me</a>
+      <a href="http://wa.me/923302126300" class="cta-btn">Contact Me</a>
     </nav>
   </header>
 
@@ -1536,259 +1487,1658 @@ body {
           </div>
           <div class="about-me-stat">
             <div class="stat-icon">⭐</div>
-            <div class="stat-number counter">1500+</div>
+            <div class="stat-number counter">1564+</div>
             <div>Client Reviews</div>
           </div>
           <div class="about-me-stat">
             <div class="stat-icon">📈</div>
-            <div class="stat-number counter">94%</div>
+            <div class="stat-number counter">96%</div>
             <div>Success Rate</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="dashboard">
-      <h2 class="section-title">Average Client Success Metrics</h2>
-      <div class="dashboard-grid">
-        <div class="dashboard-card">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--primary)">
-            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
-            <path d="M7 12h2v5H7zm4-3h2v8h-2zm4-3h2v11h-2z"/>
+    <div class="dashboard">
+  <h2 class="section-title">Performance Analytics</h2>
+  <div class="dashboard-grid modern">
+    <!-- Growth Card -->
+    <div class="metric-card growth">
+      <div class="metric-header">
+        <div class="metric-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"></path>
           </svg>
-          <div class="dashboard-value">247%</div>
-          <div class="dashboard-label">Revenue Growth</div>
-          <div class="growth-indicator">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M7 14l5-5 5 5z"/>
-            </svg>
-            +32% this month
-          </div>
-          <div class="chart">
-            <div class="chart-bar" style="height: 40%"></div>
-            <div class="chart-bar" style="height: 60%"></div>
-            <div class="chart-bar" style="height: 45%"></div>
-            <div class="chart-bar" style="height: 80%"></div>
-            <div class="chart-bar" style="height: 65%"></div>
-            <div class="chart-bar" style="height: 90%"></div>
-          </div>
         </div>
-        <div class="dashboard-card">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--primary)">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.41 16.09V20h-2.67v-1.93c-1.71-.36-3.16-1.46-3.27-3.4h1.96c.1 1.05.82 1.87 2.65 1.87 1.96 0 2.4-.98 2.4-1.59 0-.83-.44-1.61-2.67-2.14-2.48-.6-4.18-1.62-4.18-3.67 0-1.72 1.39-2.84 3.11-3.21V4h2.67v1.95c1.86.45 2.79 1.86 2.85 3.39H14.3c-.05-1.11-.64-1.87-2.22-1.87-1.5 0-2.4.68-2.4 1.64 0 .84.65 1.39 2.67 1.91s4.18 1.39 4.18 3.91c-.01 1.83-1.38 2.83-3.12 3.16z"/>
-          </svg>
-          <div class="dashboard-value">$12,847</div>
-          <div class="dashboard-label">Avg. Monthly Sales</div>
-          <div class="growth-indicator">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M7 14l5-5 5 5z"/>
-            </svg>
-            +18% growth
-          </div>
-          <div class="chart">
-            <div class="chart-bar" style="height: 50%"></div>
-            <div class="chart-bar" style="height: 70%"></div>
-            <div class="chart-bar" style="height: 65%"></div>
-            <div class="chart-bar" style="height: 85%"></div>
-            <div class="chart-bar" style="height: 75%"></div>
-            <div class="chart-bar" style="height: 95%"></div>
-          </div>
-        </div>
-        <div class="dashboard-card">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--primary)">
-            <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
-          </svg>
-          <div class="dashboard-value">50,000+</div>
-          <div class="dashboard-label">Active Customers</div>
-          <div class="growth-indicator">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M7 14l5-5 5 5z"/>
-            </svg>
-            Growing fast
-          </div>
-        </div>
+        <h3>Revenue Growth</h3>
       </div>
-    </section>
+      <div class="metric-value">$247,582</div>
+      <div class="metric-change positive">
+        <svg viewBox="0 0 24 24">
+          <path d="M7 14l5-5 5 5z"></path>
+        </svg>
+        +32.5% vs last month
+      </div>
+      <div class="line-chart">
+        <canvas id="growthChart"></canvas>
+      </div>
+    </div>
+
+    <!-- Performance Card -->
+    <div class="metric-card performance">
+      <div class="metric-header">
+        <div class="metric-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"></path>
+          </svg>
+        </div>
+        <h3>Performance Index</h3>
+      </div>
+      <div class="metric-value">98.7%</div>
+      <div class="metric-change positive">
+        <svg viewBox="0 0 24 24">
+          <path d="M7 14l5-5 5 5z"></path>
+        </svg>
+        +5.2% improvement
+      </div>
+      <div class="gauge-chart">
+        <canvas id="performanceGauge"></canvas>
+      </div>
+    </div>
+
+    <!-- Conversion Card -->
+    <div class="metric-card conversion">
+      <div class="metric-header">
+        <div class="metric-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"></path>
+          </svg>
+        </div>
+        <h3>Conversion Rate</h3>
+      </div>
+      <div class="metric-value">8.76%</div>
+      <div class="metric-change positive">
+        <svg viewBox="0 0 24 24">
+          <path d="M7 14l5-5 5 5z"></path>
+        </svg>
+        +2.4% increase
+      </div>
+      <div class="donut-chart">
+        <canvas id="conversionDonut"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .dashboard {
+      background: white;
+      border-radius: 20px;
+      padding: 2rem;
+      margin: 4rem auto;
+      max-width: 1200px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .dashboard-grid.modern {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .metric-card {
+      background: white;
+      border-radius: 15px;
+      padding: 1.5rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+      border: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .metric-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+
+    .metric-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .metric-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(29, 191, 115, 0.1);
+    }
+
+    .metric-icon svg {
+      width: 24px;
+      height: 24px;
+      fill: var(--primary);
+    }
+
+    .metric-value {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #2d3748;
+      margin: 1rem 0;
+      background: linear-gradient(45deg, var(--primary), #2ce88e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .metric-change {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .metric-change.positive {
+      color: var(--primary);
+    }
+
+    .metric-change svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+
+    .line-chart, .gauge-chart, .donut-chart {
+      height: 150px;
+      margin-top: 1rem;
+      position: relative;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes shimmer {
+      0% { background-position: -1000px 0; }
+      100% { background-position: 1000px 0; }
+    }
+
+    .metric-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+      );
+      animation: shimmer 2s infinite;
+      z-index: 1;
+    }
+  </style>
+
+  <script>
+    // Initialize charts when the document is ready
+    document.addEventListener('DOMContentLoaded', () => {
+      // Growth Chart
+      const growthCtx = document.getElementById('growthChart').getContext('2d');
+      new Chart(growthCtx, {
+        type: 'line',
+        data: {
+          labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+          datasets: [{
+            label: 'Revenue',
+            data: [30000, 45000, 60000, 82000, 95000, 247582],
+            borderColor: '#1dbf73',
+            backgroundColor: 'rgba(29, 191, 115, 0.1)',
+            tension: 0.4,
+            fill: true
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              grid: {
+                display: false
+              }
+            },
+            x: {
+              grid: {
+                display: false
+              }
+            }
+          }
+        }
+      });
+
+      // Performance Gauge
+      const gaugeCtx = document.getElementById('performanceGauge').getContext('2d');
+      new Chart(gaugeCtx, {
+        type: 'doughnut',
+        data: {
+          datasets: [{
+            data: [98.7, 1.3],
+            backgroundColor: [
+              '#1dbf73',
+              '#f1f5f9'
+            ],
+            circumference: 180,
+            rotation: 270
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          cutout: '80%',
+          plugins: {
+            legend: {
+              display: false
+            }
+          }
+        }
+      });
+
+      // Conversion Donut
+      const donutCtx = document.getElementById('conversionDonut').getContext('2d');
+      new Chart(donutCtx, {
+        type: 'doughnut',
+        data: {
+          labels: ['Converted', 'Pending'],
+          datasets: [{
+            data: [8.76, 91.24],
+            backgroundColor: [
+              '#1dbf73',
+              '#f1f5f9'
+            ]
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          cutout: '70%',
+          plugins: {
+            legend: {
+              display: false
+            }
+          }
+        }
+      });
+    });
+  </script>
+</div>
 
     <div class="services">
-      <div class="service-card">
-        <div class="service-img">
-          <svg class="floating-icon" width="80" height="80" viewBox="0 0 24 24" fill="white">
-            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/>
+  <div class="service-tabs">
+    <div class="service-tab active" data-tab="web">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"></path>
+      </svg>
+      Web Development
+    </div>
+    <div class="service-tab" data-tab="video">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+        <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"></path>
+      </svg>
+      Video Production
+    </div>
+    <div class="service-tab" data-tab="marketing">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+        <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"></path>
+      </svg>
+      Digital Marketing
+    </div>
+    <div class="service-tab" data-tab="wordpress">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"></path>
+      </svg>
+      WordPress
+    </div>
+  </div>
+
+  <div class="service-content active" data-content="web">
+    <div class="service-header">
+      <h2>Web Development Solutions</h2>
+      <p>Custom websites that drive results</p>
+    </div>
+    <div class="service-grid">
+      <div class="service-feature">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"></path>
           </svg>
         </div>
-        <div class="service-content">
-          <h3>Website Development</h3>
-          <p>Custom responsive websites built with modern technologies</p>
-          <div class="price">Starting at $299</div>
-          <a href="http://wa.me/923302126300" class="cta-btn">Order Now</a>
+        <h3>Responsive Design</h3>
+        <p>Mobile-first websites that look great on all devices</p>
+        <ul class="feature-list">
+          <li>Custom responsive layouts</li>
+          <li>Mobile optimization</li>
+          <li>Cross-browser compatibility</li>
+        </ul>
+        <span class="price">From $799</span>
+      </div>
+
+      <div class="service-feature">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+            <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
+          </svg>
+        </div>
+        <h3>Custom Development</h3>
+        <p>Tailor-made solutions for your specific needs</p>
+        <ul class="feature-list">
+          <li>Full-stack development</li>
+          <li>API integration</li>
+          <li>Database design</li>
+        </ul>
+        <span class="price">From $1,499</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-content" data-content="video">
+    <div class="service-header">
+      <h2>Professional Video Production</h2>
+      <p>Compelling visual content that tells your story</p>
+    </div>
+    <div class="service-grid">
+      <div class="service-feature">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+            <path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14zM8 15c0-1.66 1.34-3 3-3 .35 0 .69.07 1 .18V6h5v2h-3v7.03c-.02 1.64-1.35 2.97-3 2.97-1.66 0-3-1.34-3-3z"></path>
+          </svg>
+        </div>
+        <h3>Video Editing</h3>
+        <p>Professional editing for any type of content</p>
+        <ul class="feature-list">
+          <li>Color grading</li>
+          <li>Sound design</li>
+          <li>Motion graphics</li>
+        </ul>
+        <span class="price">From $299</span>
+      </div>
+
+      <div class="service-feature">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+            <path d="M13.05 9.79L10 7.5v9l3.05-2.29L16 12l-2.95-2.21zm0 0L10 7.5v9l3.05-2.29L16 12l-2.95-2.21z"></path>
+          </svg>
+        </div>
+        <h3>Animation</h3>
+        <p>Engaging 2D &amp; 3D animations</p>
+        <ul class="feature-list">
+          <li>Character animation</li>
+          <li>Logo animation</li>
+          <li>Explainer videos</li>
+        </ul>
+        <span class="price">From $499</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-content" data-content="marketing">
+    <div class="service-header">
+      <h2>Digital Marketing Services</h2>
+      <p>Data-driven strategies for online growth</p>
+    </div>
+    <div class="service-grid">
+      <div class="service-feature">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"></path>
+          </svg>
+        </div>
+        <h3>Email Marketing</h3>
+        <p>Targeted campaigns that convert</p>
+        <ul class="feature-list">
+          <li>Campaign strategy</li>
+          <li>A/B testing</li>
+          <li>Analytics &amp; reporting</li>
+        </ul>
+        <span class="price">From $399/month</span>
+      </div>
+
+      <div class="service-feature">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1.99 6h-2V7h2v2zm-2 2v2h2v-2h-2zm-6-2h2V7h-2v2zm2 2v2h-2v-2h2zm-8-2h2V7H3.01v2H3zm2 2v2h-2v-2h2zm12 6H5v-2h14v2zm0-4h-2v-2h2v2z"></path>
+          </svg>
+        </div>
+        <h3>Social Media</h3>
+        <p>Build your brand presence</p>
+        <ul class="feature-list">
+          <li>Content creation</li>
+          <li>Community management</li>
+          <li>Paid advertising</li>
+        </ul>
+        <span class="price">From $599/month</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-content" data-content="wordpress">
+    <div class="service-header">
+      <h2>WordPress Development</h2>
+      <p>Custom WordPress solutions for any business</p>
+    </div>
+    <div class="service-grid">
+      <div class="service-feature">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"></path>
+          </svg>
+        </div>
+        <h3>Custom Themes</h3>
+        <p>Unique designs that stand out</p>
+        <ul class="feature-list">
+          <li>Custom design</li>
+          <li>Mobile responsive</li>
+          <li>Speed optimization</li>
+        </ul>
+        <span class="price">From $999</span>
+      </div>
+
+      <div class="service-feature">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+            <path d="M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5C13 2.12 11.88 1 10.5 1S8 2.12 8 3.5V5H4c-1.1 0-1.99.9-1.99 2v3.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7 1.49 0 2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5c1.38 0 2.5-1.12 2.5-2.5S21.88 11 20.5 11z"></path>
+          </svg>
+        </div>
+        <h3>Plugin Development</h3>
+        <p>Custom functionality for your site</p>
+        <ul class="feature-list">
+          <li>Custom plugins</li>
+          <li>API integration</li>
+          <li>Performance optimization</li>
+        </ul>
+        <span class="price">From $799</span>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .services {
+      padding: 2rem;
+      background: var(--light);
+    }
+
+    .service-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .service-tab {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 2rem;
+      background: white;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .service-tab.active {
+      background: var(--primary);
+      color: white;
+    }
+
+    .service-tab:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .service-content {
+      display: none;
+      animation: fadeIn 0.5s ease-out;
+    }
+
+    .service-content.active {
+      display: block;
+    }
+
+    .service-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .service-header h2 {
+      color: var(--dark);
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .service-header p {
+      color: #666;
+      font-size: 1.1rem;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .service-feature {
+      background: white;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-feature:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+
+    .feature-icon {
+      width: 64px;
+      height: 64px;
+      background: var(--light);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      color: var(--primary);
+    }
+
+    .service-feature h3 {
+      color: var(--dark);
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .feature-list {
+      list-style: none;
+      margin: 1.5rem 0;
+    }
+
+    .feature-list li {
+      padding: 0.5rem 0;
+      color: #666;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .feature-list li::before {
+      content: '✓';
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    .price {
+      display: inline-block;
+      background: var(--light);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      color: var(--primary);
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+
+  <script>
+    // Tab functionality
+    const tabs = document.querySelectorAll('.service-tab');
+    const contents = document.querySelectorAll('.service-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs
+        tabs.forEach(t => t.classList.remove('active'));
+        // Add active class to clicked tab
+        tab.classList.add('active');
+        
+        // Hide all content
+        contents.forEach(c => c.classList.remove('active'));
+        // Show corresponding content
+        const content = document.querySelector(`[data-content="${tab.dataset.tab}"]`);
+        content.classList.add('active');
+      });
+    });
+  </script>
+</div>
+
+    <section class="growth-showcase">
+  <h2 class="section-title">Real-time Revenue Pipeline</h2>
+  <div class="revenue-pipeline">
+    <div class="pipeline-visualizer">
+      <!-- 3D Pipeline Structure -->
+      <div class="pipe-structure">
+        <div class="pipe-segment">
+          <div class="flow-particle">💰</div>
+          <div class="flow-particle">💎</div>
+          <div class="flow-particle">💵</div>
+          <div class="glow-effect"></div>
         </div>
       </div>
 
-      <div class="service-card">
-        <div class="service-img">
-          <svg class="floating-icon" width="80" height="80" viewBox="0 0 24 24" fill="white">
-            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/>
-          </svg>
-        </div>
-        <div class="service-content">
-          <h3>UI/UX Design</h3>
-          <p>Beautiful and intuitive user interfaces that convert</p>
-          <div class="price">Starting at $399</div>
-          <a href="http://wa.me/923302126300" class="cta-btn">Order Now</a>
+      <!-- Holographic Display -->
+      <div class="holo-display">
+        <div class="holo-ring"></div>
+        <div class="holo-stats">
+          <div class="stat-value">$<span class="revenue-counter">0</span></div>
+          <div class="stat-label">Live Revenue</div>
         </div>
       </div>
 
-      <div class="service-card">
-        <div class="service-img">
-          <svg class="floating-icon" width="80" height="80" viewBox="0 0 24 24" fill="white">
-            <path d="M7 5h10v2h2V3c0-1.1-.9-2-2-2H7c-1.1 0-2 .9-2 2v4h2V5zm8.41 11.59L20 12l-4.59-4.59L14 8.83 17.17 12 14 15.17l1.41 1.42zM10 15.17L6.83 12 10 8.83 8.59 7.41 4 12l4.59 4.59L10 15.17zM17 19H7v-2H5v4c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2v-4h-2v2z"/>
-          </svg>
-        </div>
-        <div class="service-content">
-          <h3>Custom Development</h3>
-          <p>Tailored solutions for your specific needs</p>
-          <div class="price">Starting at $499</div>
-          <a href="http://wa.me/923302126300" class="cta-btn">Order Now</a>
-        </div>
+      <!-- Energy Particles -->
+      <div class="energy-particles"></div>
+    </div>
+
+    <!-- Real-time Metrics -->
+    <div class="metrics-dashboard">
+      <div class="metric-card">
+        <div class="metric-icon">⚡</div>
+        <div class="metric-value">$<span class="daily-counter">0</span></div>
+        <div class="metric-label">Today's Earnings</div>
+        <div class="pulse-line"></div>
       </div>
 
-      <div class="service-card">
-        <div class="service-img">
-          <svg class="floating-icon" width="80" height="80" viewBox="0 0 24 24" fill="white">
-            <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-2H6v-2h3V8h2v3h3v2z"/>
-          </svg>
-        </div>
-        <div class="service-content">
-          <h3>Video Editing</h3>
-          <p>Professional video editing services for all your needs</p>
-          <div class="price">Starting at $99</div>
-          <a href="http://wa.me/923302126300" class="cta-btn">Order Now</a>
-        </div>
+      <div class="metric-card">
+        <div class="metric-icon">🎯</div>
+        <div class="metric-value"><span class="conversion-counter">0</span>%</div>
+        <div class="metric-label">Conversion Rate</div>
+        <div class="pulse-line"></div>
       </div>
 
-      <div class="service-card">
-        <div class="service-img">
-          <svg class="floating-icon" width="80" height="80" viewBox="0 0 24 24" fill="white">
-            <path d="M12 12c0-3 2.5-5.5 5.5-5.5S23 9 23 12H12zm0 0c0 3-2.5 5.5-5.5 5.5S1 15 1 12h11zm0 0c-3 0-5.5-2.5-5.5-5.5S9 1 12 1v11zm0 0c3 0 5.5 2.5 5.5 5.5S15 23 12 23V12z"/>
-          </svg>
-        </div>
-        <div class="service-content">
-          <h3>3D Animation</h3>
-          <p>Stunning 3D animations and visual effects</p>
-          <div class="price">Starting at $149</div>
-          <a href="http://wa.me/923302126300" class="cta-btn">Order Now</a>
-        </div>
+      <div class="metric-card">
+        <div class="metric-icon">📈</div>
+        <div class="metric-value">+<span class="growth-counter">0</span>%</div>
+        <div class="metric-label">Growth Rate</div>
+        <div class="pulse-line"></div>
       </div>
+    </div>
+  </div>
+
+  <style>
+    .growth-showcase {
+      background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+      padding: 4rem 2rem;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .revenue-pipeline {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .pipeline-visualizer {
+      position: relative;
+      height: 300px;
+      margin-bottom: 3rem;
+    }
+
+    .pipe-structure {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 80px;
+      transform: translateY(-50%);
+      perspective: 1000px;
+    }
+
+    .pipe-segment {
+      background: rgba(255, 255, 255, 0.1);
+      height: 100%;
+      border-radius: 40px;
+      position: relative;
+      overflow: hidden;
+      transform: rotateX(45deg);
+      box-shadow: 0 0 30px rgba(29, 191, 115, 0.3);
+    }
+
+    .flow-particle {
+      position: absolute;
+      font-size: 2rem;
+      animation: flowAnimation 3s linear infinite;
+      opacity: 0;
+    }
+
+    .glow-effect {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(90deg, transparent, rgba(29, 191, 115, 0.3), transparent);
+      animation: glowMove 2s linear infinite;
+    }
+
+    .holo-display {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .holo-ring {
+      width: 200px;
+      height: 200px;
+      border: 2px solid rgba(29, 191, 115, 0.3);
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: holoPulse 2s ease-out infinite;
+    }
+
+    .holo-stats {
+      position: relative;
+      z-index: 2;
+    }
+
+    .stat-value {
+      font-size: 3rem;
+      font-weight: bold;
+      color: var(--primary);
+      text-shadow: 0 0 20px rgba(29, 191, 115, 0.5);
+    }
+
+    .stat-label {
+      font-size: 1.2rem;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .metrics-dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .metric-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(10px);
+    }
+
+    .metric-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .metric-value {
+      font-size: 2.2rem;
+      font-weight: bold;
+      color: var(--primary);
+      margin: 1rem 0;
+    }
+
+    .pulse-line {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      background: var(--primary);
+      animation: pulseLine 2s ease-in-out infinite;
+    }
+
+    .energy-particles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+    }
+
+    @keyframes flowAnimation {
+      0% {
+        transform: translate(-100%, -50%) scale(0.5);
+        opacity: 0;
+      }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% {
+        transform: translate(200%, -50%) scale(1);
+        opacity: 0;
+      }
+    }
+
+    @keyframes glowMove {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+
+    @keyframes holoPulse {
+      0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.5;
+      }
+      50% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 0.2;
+      }
+      100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.5;
+      }
+    }
+
+    @keyframes pulseLine {
+      0% { width: 0; opacity: 1; }
+      50% { width: 100%; opacity: 0.5; }
+      100% { width: 0; opacity: 1; }
+    }
+  </style>
+
+  <script>
+    // Animate revenue counter
+    function animateCounter(element, target, duration = 2000, increment = 50) {
+      let current = 0;
+      const steps = Math.ceil(duration / increment);
+      const step = target / steps;
       
-      <div class="service-card">
-        <div class="service-img">
-          <svg class="floating-icon" width="80" height="80" viewBox="0 0 24 24" fill="white">
-            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/>
-            <path d="M12 7.5c1.84 0 3.33 1.49 3.33 3.33s-1.49 3.33-3.33 3.33-3.33-1.49-3.33-3.33S10.16 7.5 12 7.5zm0-1.5c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z"/>
-          </svg>
+      const timer = setInterval(() => {
+        current += step;
+        if (current >= target) {
+          element.textContent = target.toLocaleString();
+          clearInterval(timer);
+        } else {
+          element.textContent = Math.floor(current).toLocaleString();
+        }
+      }, increment);
+    }
+
+    // Create energy particles
+    function createParticle() {
+      const particle = document.createElement('div');
+      particle.style.cssText = `
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: ${Math.random() > 0.5 ? 'var(--primary)' : '#fff'};
+        border-radius: 50%;
+        top: ${Math.random() * 100}%;
+        left: ${Math.random() * 100}%;
+        opacity: 0;
+        animation: particleFade 1s ease-out forwards;
+      `;
+      
+      document.querySelector('.energy-particles').appendChild(particle);
+      setTimeout(() => particle.remove(), 1000);
+    }
+
+    // Initialize animations
+    setInterval(() => {
+      const revenue = Math.floor(Math.random() * 10000) + 5000;
+      animateCounter(document.querySelector('.revenue-counter'), revenue);
+      animateCounter(document.querySelector('.daily-counter'), Math.floor(revenue * 1.5));
+      animateCounter(document.querySelector('.conversion-counter'), Math.floor(Math.random() * 20) + 80);
+      animateCounter(document.querySelector('.growth-counter'), Math.floor(Math.random() * 30) + 20);
+      createParticle();
+    }, 3000);
+
+    // Add particle effect
+    setInterval(createParticle, 200);
+  </script>
+</section>
+
+    <section class="skills-showcase">
+  <h2 class="section-title">Skill Showcase</h2>
+  <div class="skills-container">
+    <svg width="0" height="0">
+      <defs>
+        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:var(--primary)"></stop>
+          <stop offset="100%" style="stop-color:#2ce88e"></stop>
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <div class="skill-category">
+      <h3>Development</h3>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <div class="skill-ring">
+            <svg viewBox="0 0 100 100">
+              <circle class="skill-ring-bg" cx="50" cy="50" r="45"></circle>
+              <circle class="skill-ring-progress" cx="50" cy="50" r="45" style="stroke-dasharray: 283; stroke-dashoffset: calc(283 - (283 * 95) / 100);"></circle>
+            </svg>
+            <div class="skill-text">
+              <span class="skill-percent">95%</span>
+              <span class="skill-name">Full Stack</span>
+            </div>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 98%">Frontend</div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 92%">Backend</div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 95%">DevOps</div>
+            </div>
+          </div>
         </div>
-        <div class="service-content">
-          <h3>Social Media Ads</h3>
-          <p>Strategic ad campaigns that convert</p>
-          <div class="price">Starting at $199</div>
-          <a href="http://wa.me/923302126300" class="cta-btn">Order Now</a>
+
+        <div class="skill-item">
+          <div class="skill-ring">
+            <svg viewBox="0 0 100 100">
+              <circle class="skill-ring-bg" cx="50" cy="50" r="45"></circle>
+              <circle class="skill-ring-progress" cx="50" cy="50" r="45" style="stroke-dasharray: 283; stroke-dashoffset: calc(283 - (283 * 90) / 100);"></circle>
+            </svg>
+            <div class="skill-text">
+              <span class="skill-percent">90%</span>
+              <span class="skill-name">UI/UX</span>
+            </div>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 95%">Design</div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 88%">Prototyping</div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 92%">User Research</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="radial-progress">
+            <div class="circle">
+              <div class="mask full">
+                <div class="fill" style="transform: rotate(162deg);"></div>
+              </div>
+              <div class="mask half">
+                <div class="fill" style="transform: rotate(162deg);"></div>
+              </div>
+              <div class="inside-circle">
+                85<span>%</span>
+              </div>
+            </div>
+            <span class="skill-label">Mobile Dev</span>
+            <div class="skill-tags">
+              <span>iOS</span>
+              <span>Android</span>
+              <span>React Native</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <section class="growth-showcase">
-      <h2 class="section-title">Client Growth After Services</h2>
-      <div class="growth-container">
-        <div class="growth-comparison">
-          <div class="growth-before">
-            <h3>Before</h3>
-            <div class="growth-chart">
-              <div class="chart-bar" style="height: 30%"></div>
-              <div class="chart-bar" style="height: 40%"></div>
-              <div class="chart-bar" style="height: 25%"></div>
-              <div class="chart-bar" style="height: 35%"></div>
-            </div>
-            <div class="growth-stats">
-              <span>Avg. Monthly Revenue</span>
-              <strong>$2,500</strong>
-            </div>
-          </div>
-          <div class="growth-arrow">
-            <svg viewBox="0 0 24 24" fill="var(--primary)" width="48" height="48">
-              <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
-            </svg>
-          </div>
-          <div class="growth-after">
-            <h3>After</h3>
-            <div class="growth-chart">
-              <div class="chart-bar" style="height: 70%"></div>
-              <div class="chart-bar" style="height: 85%"></div>
-              <div class="chart-bar" style="height: 95%"></div>
-              <div class="chart-bar" style="height: 90%"></div>
-            </div>
-            <div class="growth-stats">
-              <span>Avg. Monthly Revenue</span>
-              <strong>$12,500</strong>
-            </div>
+    <style>
+      .skill-bars {
+        margin-top: 1rem;
+      }
+      
+      .skill-bar {
+        height: 12px;
+        background: #eef1f5;
+        border-radius: 6px;
+        margin: 8px 0;
+        overflow: hidden;
+      }
+      
+      .skill-progress {
+        height: 100%;
+        background: linear-gradient(90deg, var(--primary), #2ce88e);
+        border-radius: 6px;
+        transition: width 1.5s ease-in-out;
+        color: white;
+        font-size: 0.7rem;
+        display: flex;
+        align-items: center;
+        padding-left: 8px;
+      }
+      
+      .radial-progress {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+      }
+      
+      .circle {
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+      
+      .mask {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        border-radius: 50%;
+        clip: rect(0px, 150px, 150px, 75px);
+      }
+      
+      .fill {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        border-radius: 50%;
+        clip: rect(0px, 75px, 150px, 0px);
+        background: linear-gradient(90deg, var(--primary), #2ce88e);
+      }
+      
+      .mask.full,
+      .fill {
+        animation: fillAnimation 3s ease-in-out;
+        transform-origin: center;
+      }
+      
+      .inside-circle {
+        width: 130px;
+        height: 130px;
+        position: absolute;
+        background: white;
+        border-radius: 50%;
+        top: 10px;
+        left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--primary);
+      }
+
+      .inside-circle span {
+        font-size: 1rem;
+        margin-left: 2px;
+      }
+      
+      .skill-label {
+        display: block;
+        margin-top: 1rem;
+        font-weight: bold;
+        color: var(--dark);
+      }
+      
+      .skill-tags {
+        display: flex;
+        gap: 0.5rem;
+        justify-content: center;
+        margin-top: 0.5rem;
+        flex-wrap: wrap;
+      }
+      
+      .skill-tags span {
+        background: #f5f5f5;
+        padding: 4px 8px;
+        border-radius: 12px;
+        font-size: 0.8rem;
+        color: var(--primary);
+      }
+      
+      @keyframes fillAnimation {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(162deg);
+        }
+      }
+    </style>
+  </div>
+</section>
+
+    <section class="process-workflow">
+  <h2 class="section-title">Development Process</h2>
+  <div class="workflow-container">
+    <div class="workflow-timeline">
+      <!-- Step 1 -->
+      <div class="workflow-step active">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h3>Discovery &amp; Planning</h3>
+          <div class="step-details">
+            <ul>
+              <li>Initial consultation and requirement gathering</li>
+              <li>Project scope definition</li>
+              <li>Technology stack selection</li>
+              <li>Timeline and budget planning</li>
+              <li>Documentation and approval</li>
+            </ul>
+            <div class="step-duration">Duration: 3-5 days</div>
           </div>
         </div>
       </div>
-    </section>
+
+      <!-- Step 2 -->
+      <div class="workflow-step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h3>Design Phase</h3>
+          <div class="step-details">
+            <ul>
+              <li>Wireframe creation</li>
+              <li>UI/UX design mockups</li>
+              <li>Client feedback integration</li>
+              <li>Design revisions</li>
+              <li>Final design approval</li>
+            </ul>
+            <div class="step-duration">Duration: 5-7 days</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="workflow-step">
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h3>Development</h3>
+          <div class="step-details">
+            <ul>
+              <li>Frontend development</li>
+              <li>Backend implementation</li>
+              <li>Database integration</li>
+              <li>API development</li>
+              <li>Regular progress updates</li>
+            </ul>
+            <div class="step-duration">Duration: 10-15 days</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="workflow-step">
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <h3>Testing &amp; QA</h3>
+          <div class="step-details">
+            <ul>
+              <li>Functionality testing</li>
+              <li>Performance optimization</li>
+              <li>Cross-browser compatibility</li>
+              <li>Security testing</li>
+              <li>Bug fixes and improvements</li>
+            </ul>
+            <div class="step-duration">Duration: 5-7 days</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="workflow-step">
+        <div class="step-number">5</div>
+        <div class="step-content">
+          <h3>Deployment</h3>
+          <div class="step-details">
+            <ul>
+              <li>Server configuration</li>
+              <li>Domain and SSL setup</li>
+              <li>Production deployment</li>
+              <li>Final testing</li>
+              <li>Launch preparation</li>
+            </ul>
+            <div class="step-duration">Duration: 2-3 days</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 6 -->
+      <div class="workflow-step">
+        <div class="step-number">6</div>
+        <div class="step-content">
+          <h3>Post-Launch Support</h3>
+          <div class="step-details">
+            <ul>
+              <li>Monitoring and maintenance</li>
+              <li>Performance tracking</li>
+              <li>Bug fixes and updates</li>
+              <li>Client training</li>
+              <li>Ongoing support</li>
+            </ul>
+            <div class="step-duration">Duration: Ongoing</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .process-workflow {
+      padding: 4rem 0;
+      background: linear-gradient(145deg, #ffffff, #f8f9ff);
+    }
+
+    .workflow-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .workflow-timeline {
+      position: relative;
+      padding: 2rem 0;
+    }
+
+    .workflow-timeline::before {
+      content: '';
+      position: absolute;
+      left: 50px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--primary) 0%, #2ce88e 100%);
+    }
+
+    .workflow-step {
+      display: flex;
+      margin-bottom: 3rem;
+      opacity: 0;
+      transform: translateX(-30px);
+      transition: all 0.5s ease;
+    }
+
+    .workflow-step.active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .step-number {
+      width: 40px;
+      height: 40px;
+      background: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      margin-right: 2rem;
+      position: relative;
+      z-index: 2;
+      box-shadow: 0 0 20px rgba(29, 191, 115, 0.3);
+    }
+
+    .step-content {
+      flex: 1;
+      background: white;
+      border-radius: 15px;
+      padding: 2rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+
+    .step-content:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .step-content h3 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .step-details ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .step-details li {
+      padding: 0.5rem 0;
+      padding-left: 1.5rem;
+      position: relative;
+      color: #666;
+    }
+
+    .step-details li::before {
+      content: '→';
+      color: var(--primary);
+      position: absolute;
+      left: 0;
+    }
+
+    .step-duration {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid #eee;
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .workflow-timeline::before {
+        left: 30px;
+      }
+      
+      .step-number {
+        width: 30px;
+        height: 30px;
+        margin-right: 1rem;
+      }
+      
+      .step-content {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+
+  <script>
+    // Animate steps on scroll
+    const observerWorkflow = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, {
+      threshold: 0.2,
+      rootMargin: '50px'
+    });
+
+    document.querySelectorAll('.workflow-step').forEach(step => {
+      observerWorkflow.observe(step);
+    });
+
+    // Add hover effects
+    document.querySelectorAll('.step-content').forEach(content => {
+      content.addEventListener('mouseenter', () => {
+        content.style.transform = 'translateY(-5px)';
+      });
+      
+      content.addEventListener('mouseleave', () => {
+        content.style.transform = 'translateY(0)';
+      });
+    });
+  </script>
+</section>
 
     <section class="reviews">
-      <h2 class="section-title">Client Reviews</h2>
-      <div class="review-grid">
-        <div class="review-card">
-          <p>"Outstanding service! Faisal transformed our online presence completely. Our sales have increased by 200% since launching the new website."</p>
-          <div class="reviewer">
-            <div class="reviewer-avatar">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                <path d="M16.25 16.25v-10h-10v10h10m0-11.25c.69 0 1.25.56 1.25 1.25v10c0 .69-.56 1.25-1.25 1.25h-10c-.69 0-1.25-.56-1.25-1.25v-10c0-.69.56-1.25 1.25-1.25h10"/>
-              </svg>
-              <img src="https://flagcdn.com/w20/us.png" class="country-flag" alt="USA">
-            </div>
-            <div>
-              <h4>James Morrison</h4>
-              <p>★★★★★</p>
-              <small>United States</small>
-            </div>
+  <h2 class="section-title">Client Testimonials</h2>
+  <div class="review-grid">
+    <!-- Review Card 1 -->
+    <div class="review-card">
+      <div class="review-header">
+        <div class="reviewer">
+          <div class="reviewer-avatar">👨‍💼</div>
+          <div class="reviewer-info">
+            <h4>John Smith</h4>
+            <span class="company">Tech Startup CEO</span>
           </div>
         </div>
-        <div class="review-card">
-          <p>"Exceptional work ethic and amazing attention to detail. Our e-commerce store has never looked better!"</p>
-          <div class="reviewer">
-            <div class="reviewer-avatar">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                <path d="M16.25 16.25v-10h-10v10h10m0-11.25c.69 0 1.25.56 1.25 1.25v10c0 .69-.56 1.25-1.25 1.25h-10c-.69 0-1.25-.56-1.25-1.25v-10c0-.69.56-1.25 1.25-1.25h10"/>
-              </svg>
-              <img src="https://flagcdn.com/w20/au.png" class="country-flag" alt="Australia">
-            </div>
-            <div>
-              <h4>Sarah Smith</h4>
-              <p>★★★★★</p>
-              <small>Australia</small>
-            </div>
-          </div>
+        <div class="review-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+      <div class="review-content">
+        <p>"Exceptional web development service! The team transformed our outdated website into a modern, high-converting platform. Our conversion rates increased by 150% within the first month."</p>
+      </div>
+      <div class="review-metrics">
+        <div class="metric">
+          <span class="metric-value">+150%</span>
+          <span class="metric-label">Conversion Rate</span>
         </div>
-        <div class="review-card">
-          <p>"Best freelancer I've worked with! Delivered the project ahead of schedule and provided excellent support."</p>
-          <div class="reviewer">
-            <div class="reviewer-avatar">
-              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                <path d="M16.25 16.25v-10h-10v10h10m0-11.25c.69 0 1.25.56 1.25 1.25v10c0 .69-.56 1.25-1.25 1.25h-10c-.69 0-1.25-.56-1.25-1.25v-10c0-.69.56-1.25 1.25-1.25h10"/>
-              </svg>
-              <img src="https://flagcdn.com/w20/gb.png" class="country-flag" alt="UK">
-            </div>
-            <div>
-              <h4>David Williams</h4>
-              <p>★★★★★</p>
-              <small>United Kingdom</small>
-            </div>
-          </div>
+        <div class="metric">
+          <span class="metric-value">3x</span>
+          <span class="metric-label">Revenue Growth</span>
         </div>
       </div>
-    </section>
+      <div class="project-type">
+        <span>Web Development</span>
+        <span>UI/UX Design</span>
+      </div>
+    </div>
+
+    <!-- Review Card 2 -->
+    <div class="review-card">
+      <div class="review-header">
+        <div class="reviewer">
+          <div class="reviewer-avatar">👩‍💼</div>
+          <div class="reviewer-info">
+            <h4>Sarah Johnson</h4>
+            <span class="company">E-commerce Director</span>
+          </div>
+        </div>
+        <div class="review-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+      <div class="review-content">
+        <p>"Our e-commerce store's performance has skyrocketed since the redesign. The mobile optimization and seamless checkout process led to a significant increase in sales."</p>
+      </div>
+      <div class="review-metrics">
+        <div class="metric">
+          <span class="metric-value">+200%</span>
+          <span class="metric-label">Mobile Sales</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">-40%</span>
+          <span class="metric-label">Cart Abandonment</span>
+        </div>
+      </div>
+      <div class="project-type">
+        <span>E-commerce</span>
+        <span>Mobile Optimization</span>
+      </div>
+    </div>
+
+    <!-- Review Card 3 -->
+    <div class="review-card">
+      <div class="review-header">
+        <div class="reviewer">
+          <div class="reviewer-avatar">👨‍💼</div>
+          <div class="reviewer-info">
+            <h4>Michael Chen</h4>
+            <span class="company">Marketing Manager</span>
+          </div>
+        </div>
+        <div class="review-rating">⭐⭐⭐⭐⭐</div>
+      </div>
+      <div class="review-content">
+        <p>"The SEO optimization and digital marketing strategy delivered exceptional results. Our organic traffic grew significantly, and we're now ranking #1 for our target keywords."</p>
+      </div>
+      <div class="review-metrics">
+        <div class="metric">
+          <span class="metric-value">+180%</span>
+          <span class="metric-label">Organic Traffic</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value">#1</span>
+          <span class="metric-label">Search Rankings</span>
+        </div>
+      </div>
+      <div class="project-type">
+        <span>SEO</span>
+        <span>Digital Marketing</span>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .reviews {
+      padding: 4rem 0;
+      background: linear-gradient(145deg, #ffffff, #f8f9ff);
+    }
+
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .review-card {
+      background: white;
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      animation: fadeInUp 0.6s ease forwards;
+      opacity: 0;
+    }
+
+    .review-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+
+    .review-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .reviewer {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .reviewer-avatar {
+      width: 50px;
+      height: 50px;
+      background: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+    }
+
+    .reviewer-info h4 {
+      margin: 0;
+      color: var(--dark);
+      font-size: 1.1rem;
+    }
+
+    .company {
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .review-rating {
+      color: #FFD700;
+      font-size: 1.2rem;
+    }
+
+    .review-content {
+      margin-bottom: 1.5rem;
+    }
+
+    .review-content p {
+      color: #444;
+      line-height: 1.6;
+      font-style: italic;
+    }
+
+    .review-metrics {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .metric {
+      text-align: center;
+      padding: 1rem;
+      background: var(--light);
+      border-radius: 12px;
+      transition: all 0.3s ease;
+    }
+
+    .metric:hover {
+      background: var(--primary);
+      transform: translateY(-3px);
+    }
+
+    .metric:hover .metric-value,
+    .metric:hover .metric-label {
+      color: white;
+    }
+
+    .metric-value {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--primary);
+    }
+
+    .metric-label {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .project-type {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .project-type span {
+      background: var(--light);
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      color: var(--primary);
+      transition: all 0.3s ease;
+    }
+
+    .project-type span:hover {
+      background: var(--primary);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .review-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+      }
+    }
+  </style>
+</section>
 
     <section class="hero">
       <h1>Professional Digital Services</h1>
@@ -1798,149 +3148,870 @@ body {
     <section class="samples">
       <h2 class="section-title">Recent Work</h2>
       <div class="portfolio-grid">
-        <div class="portfolio-item">
-          <div class="portfolio-img">
-            <div class="portfolio-overlay">
-              <a href="http://wa.me/923302126300" class="cta-btn">View Project</a>
-            </div>
-            <svg width="100%" height="100%" viewBox="0 0 24 24" fill="#666">
-              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/>
-            </svg>
-          </div>
-          <div class="portfolio-content">
-            <h3>Luxury E-commerce Platform</h3>
-            <p>Custom Shopify store with advanced features</p>
-            <div class="portfolio-tags">
-              <span class="portfolio-tag">Shopify</span>
-              <span class="portfolio-tag">E-commerce</span>
-              <span class="portfolio-tag">UI/UX</span>
-            </div>
-          </div>
+  <a href="https://www.fiverr.com/portfolio" class="portfolio-item">
+    <div class="portfolio-img">
+      <div class="portfolio-overlay">
+        <span class="view-project">View Project</span>
+      </div>
+      <div class="portfolio-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-3-8c0-1.66-1.34-3-3-3s-3 1.34-3 3 1.34 3 3 3 3-1.34 3-3zm-9 4h12v4H7v-4z"></path>
+        </svg>
+      </div>
+    </div>
+    <div class="portfolio-content">
+      <span class="project-category">E-commerce</span>
+      <h3>Shopify Store</h3>
+      <p>Custom Shopify platform with advanced features and seamless checkout</p>
+      <div class="portfolio-tags">
+        <span class="portfolio-tag">Shopify</span>
+        <span class="portfolio-tag">UI/UX</span>
+        <span class="portfolio-tag">Custom Theme</span>
+      </div>
+      <div class="portfolio-stats">
+        <div class="stat">
+          <span class="stat-value">247%</span>
+          <span class="stat-label">Revenue Growth</span>
         </div>
-
-        <div class="portfolio-item">
-          <div class="portfolio-img">
-            <div class="portfolio-overlay">
-              <a href="http://wa.me/923302126300" class="cta-btn">View Project</a>
-            </div>
-            <svg width="100%" height="100%" viewBox="0 0 24 24" fill="#666">
-              <path d="M12 7.5c1.84 0 3.33 1.49 3.33 3.33s-1.49 3.33-3.33 3.33-3.33-1.49-3.33-3.33S10.16 7.5 12 7.5zm0-1.5c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z"/>
-            </svg>
-          </div>
-          <div class="portfolio-content">
-            <h3>Real Estate Website</h3>
-            <p>Modern property listing platform</p>
-            <div class="portfolio-tags">
-              <span class="portfolio-tag">WordPress</span>
-              <span class="portfolio-tag">Custom Theme</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio-item">
-          <div class="portfolio-img">
-            <div class="portfolio-overlay">
-              <a href="http://wa.me/923302126300" class="cta-btn">View Project</a>
-            </div>
-            <svg width="100%" height="100%" viewBox="0 0 24 24" fill="#666">
-              <path d="M12 12c0-3 2.5-5.5 5.5-5.5S23 9 23 12H12zm0 0c0 3-2.5 5.5-5.5 5.5S1 15 1 12h11zm0 0c-3 0-5.5-2.5-5.5-5.5S9 1 12 1v11zm0 0c3 0 5.5 2.5 5.5 5.5S15 23 12 23V12z"/>
-            </svg>
-          </div>
-          <div class="portfolio-content">
-            <h3>3D Product Animation</h3>
-            <p>High-end product visualization</p>
-            <div class="portfolio-tags">
-              <span class="portfolio-tag">3D Animation</span>
-              <span class="portfolio-tag">Product</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio-item">
-          <div class="portfolio-img">
-            <div class="portfolio-overlay">
-              <a href="http://wa.me/923302126300" class="cta-btn">View Project</a>
-            </div>
-            <svg width="100%" height="100%" viewBox="0 0 24 24" fill="#666">
-              <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-2H6v-2h3V8h2v3h3v2z"/>
-            </svg>
-          </div>
-          <div class="portfolio-content">
-            <h3>Video Production</h3>
-            <p>Commercial video editing and effects</p>
-            <div class="portfolio-tags">
-              <span class="portfolio-tag">Video Editing</span>
-              <span class="portfolio-tag">Motion Graphics</span>
-            </div>
-          </div>
+        <div class="stat">
+          <span class="stat-value">85%</span>
+          <span class="stat-label">Conversion Rate</span>
         </div>
       </div>
+    </div>
+  </a>
+
+  <a href="https://www.fiverr.com/portfolio" class="portfolio-item">
+    <div class="portfolio-img">
+      <div class="portfolio-overlay">
+        <span class="view-project">View Project</span>
+      </div>
+      <div class="portfolio-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12zm-7-2h2v-3h3V9h-3V6h-2v3h-3v2h3z"></path>
+        </svg>
+      </div>
+    </div>
+    <div class="portfolio-content">
+      <span class="project-category">Media Production</span>
+      <h3>Premium Video Editing</h3>
+      <p>Social media ads, VSL editing, business and travels editing</p>
+      <div class="portfolio-tags">
+        <span class="portfolio-tag">Video Editing</span>
+        <span class="portfolio-tag">Short ads</span>
+        <span class="portfolio-tag">VSL editing</span>
+      </div>
+      <div class="portfolio-stats">
+        <div class="stat">
+          <span class="stat-value">189%</span>
+          <span class="stat-label">Lead Generation</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">92%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <a href="https://www.fiverr.com/portfolio" class="portfolio-item">
+    <div class="portfolio-img">
+      <div class="portfolio-overlay">
+        <span class="view-project">View Project</span>
+      </div>
+      <div class="portfolio-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M13.17 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8.83c0-.53-.21-1.04-.59-1.41l-4.83-4.83c-.37-.38-.88-.59-1.41-.59zM16 15c0 2.21-1.79 4-4 4s-4-1.79-4-4s1.79-4 4-4s4 1.79 4 4z"></path>
+        </svg>
+      </div>
+    </div>
+    <div class="portfolio-content">
+      <span class="project-category">Wordpress</span>
+      <h3>Custom Wordpress Website</h3>
+      <p>High-end quality website with modifications</p>
+      <div class="portfolio-tags">
+        <span class="portfolio-tag">Wordpress</span>
+        <span class="portfolio-tag">Plugins</span>
+        <span class="portfolio-tag">Product Design</span>
+      </div>
+      <div class="portfolio-stats">
+        <div class="stat">
+          <span class="stat-value">312%</span>
+          <span class="stat-label">Engagement Rate</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">95%</span>
+          <span class="stat-label">Client ROI</span>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <style>
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .portfolio-item {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+    }
+
+    .portfolio-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+    }
+
+    .portfolio-img {
+      height: 250px;
+      background: linear-gradient(145deg, #f8f9ff, #ffffff);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .portfolio-icon {
+      width: 80px;
+      height: 80px;
+      color: var(--primary);
+      opacity: 0.8;
+      transition: all 0.3s ease;
+    }
+
+    .portfolio-item:hover .portfolio-icon {
+      transform: scale(1.1);
+      opacity: 0.2;
+    }
+
+    .portfolio-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(29, 191, 115, 0.95);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transform: translateY(100%);
+      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .portfolio-item:hover .portfolio-overlay {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .view-project {
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 2px solid white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      transform: translateY(20px);
+      opacity: 0;
+      transition: all 0.3s ease 0.1s;
+    }
+
+    .portfolio-item:hover .view-project {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .portfolio-content {
+      padding: 2rem;
+    }
+
+    .project-category {
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .portfolio-content h3 {
+      margin: 1rem 0;
+      font-size: 1.5rem;
+      color: var(--dark);
+    }
+
+    .portfolio-content p {
+      color: #666;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .portfolio-tags {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+
+    .portfolio-tag {
+      background: #f5f5f5;
+      color: var(--primary);
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      transition: all 0.3s ease;
+    }
+
+    .portfolio-tag:hover {
+      background: var(--primary);
+      color: white;
+    }
+
+    .portfolio-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #eee;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat-value {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--primary);
+      margin-bottom: 0.3rem;
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      .portfolio-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+      }
+    }
+  </style>
+</div>
     </section>
 
     <section class="success-roadmap">
-      <h2 class="section-title">My Success Journey</h2>
-      <div class="roadmap-container">
-        <div class="roadmap-line"></div>
-        <div class="roadmap-item">
-          <div class="roadmap-content">
-            <h3>2015</h3>
-            <p>Started freelancing journey on Fiverr</p>
+  <h2 class="section-title" style="color: #333; margin-bottom: 3rem;">Journey to Excellence</h2>
+  <div class="journey-container">
+    <div class="milestone-track">
+      <!-- Interactive Timeline with 3D Effects -->
+      <div class="milestone-3d-wrapper">
+        <!-- 2015 -->
+        <div class="milestone-card" style="--rotate: -30deg">
+          <div class="milestone-year">2015</div>
+          <div class="milestone-content">
+            <h3>The Beginning</h3>
+            <div class="revenue-pill">$1,000/month</div>
+            <div class="achievement-badge">
+              <span>🚀</span>
+              First Client
+            </div>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 20%"></div>
           </div>
         </div>
-        <div class="roadmap-item">
-          <div class="roadmap-content">
-            <h3>2017</h3>
-            <p>Achieved Level 2 Seller status on Fiverr & providing services worldwide through direct connections</p>
+
+        <!-- 2017 -->
+        <div class="milestone-card" style="--rotate: -15deg">
+          <div class="milestone-year">2017</div>
+          <div class="milestone-content">
+            <h3>Growth Phase</h3>
+            <div class="revenue-pill">$3000/month</div>
+            <div class="achievement-badge">
+              <span>⭐</span>
+              Level 2 Seller
+            </div>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 40%"></div>
           </div>
         </div>
-        <div class="roadmap-item">
-          <div class="roadmap-content">
-            <h3>2019</h3>
-            <p>Became Top Rated Seller on Fiverr & started my own agency</p>
+
+        <!-- 2019 -->
+        <div class="milestone-card" style="--rotate: 0deg">
+          <div class="milestone-content">
+            <h3>Breakthrough</h3>
+            <div class="revenue-pill">$5000/month</div>
+            <div class="achievement-badge">
+              <span>👑</span>
+              Top Rated Seller
+            </div>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 60%"></div>
           </div>
         </div>
-        <div class="roadmap-item">
-          <div class="roadmap-content">
-            <h3>2023</h3>
-            <p>Providing best services with 4000+ happy customers & 1500+ Reviews and counting</p>
+
+        <!-- 2021 -->
+        <div class="milestone-card" style="--rotate: 15deg">
+          <div class="milestone-year">2021</div>
+          <div class="milestone-content">
+            <h3>Expansion</h3>
+            <div class="revenue-pill">$7000/month</div>
+            <div class="achievement-badge">
+              <span>🌟</span>
+              Team Growth
+            </div>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 80%"></div>
+          </div>
+        </div>
+
+        <!-- 2023 -->
+        <div class="milestone-card active" style="--rotate: 30deg">
+          <div class="milestone-year">2023</div>
+          <div class="milestone-content">
+            <h3>Market Leader</h3>
+            <div class="revenue-pill">$Continuing/month</div>
+            <div class="achievement-badge">
+              <span>💎</span>
+              Industry Leader
+            </div>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 100%"></div>
           </div>
         </div>
       </div>
-    </section>
+
+      <!-- Floating Particles -->
+      <div class="success-particles"></div>
+    </div>
+  </div>
+
+  <style>
+    .success-roadmap {
+      background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+      padding: 6rem 2rem;
+      position: relative;
+      overflow: hidden;
+      color: white;
+    }
+
+    .milestone-3d-wrapper {
+      transform-style: preserve-3d;
+      perspective: 1000px;
+      padding: 4rem 0;
+    }
+
+    .milestone-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 500px;
+      position: relative;
+      transform: rotateY(var(--rotate));
+      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .milestone-card:hover {
+      transform: rotateY(0deg) translateZ(50px) scale(1.1);
+      background: rgba(255, 255, 255, 0.2);
+      z-index: 10;
+    }
+
+    .milestone-year {
+      position: absolute;
+      top: -15px;
+      left: 20px;
+      background: var(--primary);
+      padding: 0.5rem 1.5rem;
+      border-radius: 20px;
+      font-weight: bold;
+      box-shadow: 0 5px 15px rgba(29, 191, 115, 0.3);
+    }
+
+    .milestone-content {
+      margin-top: 1.5rem;
+    }
+
+    .revenue-pill {
+      display: inline-block;
+      background: rgba(29, 191, 115, 0.2);
+      color: var(--primary);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      margin: 1rem 0;
+      font-weight: bold;
+    }
+
+    .achievement-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin: 1rem 0;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .achievement-badge span {
+      font-size: 1.2rem;
+    }
+
+    .progress-bar {
+      height: 6px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 3px;
+      margin-top: 1rem;
+      overflow: hidden;
+    }
+
+    .progress {
+      height: 100%;
+      background: linear-gradient(90deg, var(--primary), #2ce88e);
+      transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .success-particles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    @keyframes glow {
+      0%, 100% { opacity: 0.5; }
+      50% { opacity: 1; }
+    }
+
+    /* Add particles animation */
+    .success-particles::before,
+    .success-particles::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: 
+        radial-gradient(circle, var(--primary) 1px, transparent 1px),
+        radial-gradient(circle, var(--primary) 1px, transparent 1px);
+      background-size: 50px 50px;
+      animation: particlesMove 20s linear infinite;
+      opacity: 0.3;
+    }
+
+    .success-particles::after {
+      background-size: 30px 30px;
+      animation-direction: reverse;
+      animation-duration: 15s;
+    }
+
+    @keyframes particlesMove {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-50%); }
+    }
+
+    /* Add media query for mobile responsiveness */
+    @media (max-width: 768px) {
+      .milestone-card {
+        transform: none !important;
+        margin: 2rem 1rem;
+      }
+
+      .milestone-3d-wrapper {
+        perspective: none;
+      }
+    }
+  </style>
+
+  <script>
+    // Add interactive hover effects
+    document.querySelectorAll('.milestone-card').forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        
+        const rotateX = (y - centerY) / 20;
+        const rotateY = (centerX - x) / 20;
+        
+        card.style.transform = `
+          perspective(1000px)
+          rotateX(${rotateX}deg)
+          rotateY(${rotateY}deg)
+          scale(1.1)
+        `;
+      });
+      
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = `rotateY(var(--rotate))`;
+      });
+    });
+
+    // Add particle effects
+    function createParticle() {
+      const particle = document.createElement('div');
+      particle.className = 'success-particle';
+      particle.style.left = Math.random() * 100 + 'vw';
+      particle.style.animationDuration = Math.random() * 3 + 2 + 's';
+      document.querySelector('.success-particles').appendChild(particle);
+      
+      setTimeout(() => particle.remove(), 5000);
+    }
+
+    setInterval(createParticle, 200);
+  </script>
+</section>
 
     <section class="process">
-      <h2 class="section-title">My Process</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-number">1</div>
-          <h3>Requirements</h3>
-          <p>Detailed discussion about your project needs</p>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-number">2</div>
-          <h3>Design</h3>
-          <p>Creating mockups and getting your approval</p>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-number">3</div>
-          <h3>Development</h3>
-          <p>Building your project with regular updates</p>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-number">4</div>
-          <h3>Delivery</h3>
-          <p>Final testing and project handover</p>
-        </div>
+  <h2 class="section-title">Money Flow Visualization</h2>
+  <div class="money-flow-container">
+    <!-- Multiple Payers Section -->
+    <div class="payers-section">
+      <div class="payer-circle" style="--delay: 0s">👤</div>
+      <div class="payer-circle" style="--delay: 0.5s">👤</div>
+      <div class="payer-circle" style="--delay: 1s">👤</div>
+      <div class="payer-circle" style="--delay: 1.5s">👤</div>
+      <div class="payer-circle" style="--delay: 2s">👤</div>
+    </div>
+
+    <!-- Money Streams -->
+    <div class="money-streams">
+      <div class="stream-container">
+        <div class="money-particle">💵</div>
+        <div class="money-particle">💰</div>
+        <div class="money-particle">💎</div>
       </div>
-    </section>
+    </div>
+
+    <!-- Seller Section -->
+    <div class="seller-section">
+      <div class="seller-avatar">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmRyIqtOVyun7hOmwBkba5CglWZLtXTCWAbbDPuDJmVCYhbn0h6X_9iKTb-2FAdHdHf6SgsWcY2auMx9mP-u1tC88EcaaD0oHOui0YLyeCdwQgcqA3LDBrw2Jj7irrlWpafYBgOH5CWVOA/w718-h834-no" alt="Seller">
+        <div class="seller-glow"></div>
+      </div>
+      <div class="income-counter">
+        <div class="counter-value">$<span class="dynamic-counter">0</span></div>
+        <div class="counter-label">Today's Earnings</div>
+      </div>
+    </div>
+
+    <!-- Live Transactions Feed -->
+    <div class="transactions-feed">
+      <div class="feed-header">
+        <span class="live-dot"></span>
+        Live Transactions
+      </div>
+      <div class="feed-content"></div>
+    </div>
+  </div>
+
+  <style>
+    .money-flow-container {
+      background: white;
+      border-radius: 20px;
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 1200px;
+      min-height: 500px;
+      position: relative;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .payers-section {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .payer-circle {
+      width: 40px;
+      height: 40px;
+      background: var(--light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      animation: pulseAndGlow 2s infinite;
+      animation-delay: var(--delay);
+    }
+
+    .money-streams {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+    }
+
+    .stream-container {
+      position: relative;
+      height: 100%;
+    }
+
+    .money-particle {
+      position: absolute;
+      font-size: 1.5rem;
+      animation: flowMoney 2s linear infinite;
+      opacity: 0;
+    }
+
+    .seller-section {
+      grid-column: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .seller-avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      position: relative;
+      margin-bottom: 2rem;
+    }
+
+    .seller-avatar img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      position: relative;
+      z-index: 2;
+    }
+
+    .seller-glow {
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      right: -10px;
+      bottom: -10px;
+      background: var(--primary);
+      border-radius: 50%;
+      filter: blur(20px);
+      opacity: 0.3;
+      animation: pulse 2s infinite;
+    }
+
+    .income-counter {
+      text-align: center;
+    }
+
+    .counter-value {
+      font-size: 3rem;
+      font-weight: bold;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .counter-label {
+      color: #666;
+      font-size: 1.1rem;
+    }
+
+    .transactions-feed {
+      grid-column: 1;
+      background: var(--light);
+      border-radius: 15px;
+      padding: 1rem;
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .feed-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .live-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--primary);
+      border-radius: 50%;
+      animation: blink 1s infinite;
+    }
+
+    .feed-content {
+      height: calc(100% - 50px);
+      overflow-y: auto;
+    }
+
+    @keyframes flowMoney {
+      0% {
+        transform: translate(var(--startX, 0), var(--startY, 0)) rotate(0deg);
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        transform: translate(var(--endX, 200px), var(--endY, 200px)) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    @keyframes pulseAndGlow {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(29, 191, 115, 0.4);
+      }
+      50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px 10px rgba(29, 191, 115, 0);
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(29, 191, 115, 0);
+      }
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    @keyframes pulse {
+      0% { opacity: 0.2; }
+      50% { opacity: 0.4; }
+      100% { opacity: 0.2; }
+    }
+  </style>
+
+  <script>
+    // Create money particles flowing from payers to seller
+    function createMoneyParticle() {
+      const payers = document.querySelectorAll('.payer-circle');
+      const sellerAvatar = document.querySelector('.seller-avatar');
+      const container = document.querySelector('.stream-container');
+      
+      if (!container || !sellerAvatar || !payers.length) return;
+
+      const particle = document.createElement('div');
+      particle.className = 'money-particle';
+      particle.textContent = ['💵', '💰', '💎'][Math.floor(Math.random() * 3)];
+
+      // Random payer selection
+      const payer = payers[Math.floor(Math.random() * payers.length)];
+      const payerRect = payer.getBoundingClientRect();
+      const sellerRect = sellerAvatar.getBoundingClientRect();
+      const containerRect = container.getBoundingClientRect();
+
+      // Calculate start and end positions relative to container
+      const startX = payerRect.left - containerRect.left;
+      const startY = payerRect.top - containerRect.top;
+      const endX = sellerRect.left - containerRect.left;
+      const endY = sellerRect.top - containerRect.top;
+
+      particle.style.setProperty('--startX', `${startX}px`);
+      particle.style.setProperty('--startY', `${startY}px`);
+      particle.style.setProperty('--endX', `${endX}px`);
+      particle.style.setProperty('--endY', `${endY}px`);
+
+      container.appendChild(particle);
+      
+      // Remove particle after animation
+      setTimeout(() => particle.remove(), 2000);
+
+      // Update counter
+      updateCounter();
+    }
+
+    // Update the counter value
+    function updateCounter() {
+      const counter = document.querySelector('.dynamic-counter');
+      if (!counter) return;
+
+      const currentValue = parseInt(counter.textContent.replace(/,/g, '')) || 0;
+      const increment = Math.floor(Math.random() * 100) + 50;
+      const newValue = currentValue + increment;
+      counter.textContent = newValue.toLocaleString();
+
+      // Add transaction to feed
+      addTransaction(increment);
+    }
+
+    // Add transaction to feed
+    function addTransaction(amount) {
+      const feed = document.querySelector('.feed-content');
+      if (!feed) return;
+
+      const transaction = document.createElement('div');
+      transaction.style.padding = '0.5rem';
+      transaction.style.borderBottom = '1px solid rgba(0,0,0,0.1)';
+      transaction.style.animation = 'slideIn 0.3s ease-out';
+      
+      transaction.innerHTML = `
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <span>New Order #${Math.floor(Math.random() * 1000)}</span>
+          <span style="color: var(--primary); font-weight: bold;">+$${amount}</span>
+        </div>
+      `;
+      
+      feed.insertBefore(transaction, feed.firstChild);
+      
+      // Keep only last 10 transactions
+      if (feed.children.length > 10) {
+        feed.removeChild(feed.lastChild);
+      }
+    }
+
+    // Create money particles periodically
+    setInterval(createMoneyParticle, 500);
+  </script>
+</section>
 
     <div class="stats">
       <div class="stat">
-        <div class="stat-number">4200+</div>
+        <div class="stat-number">3259+</div>
         <div>Projects Completed</div>
       </div>
       <div class="stat">
-        <div class="stat-number">4000+</div>
+        <div class="stat-number">3000+</div>
         <div>Happy Clients</div>
       </div>
       <div class="stat">
@@ -1949,55 +4020,2024 @@ body {
       </div>
     </div>
 
-    
-
-    <section class="whatsapp-section">
-      <div class="whatsapp-bubbles">
-        <div class="whatsapp-bubble" style="left: 10%; top: 20%; width: 50px; height: 50px;"></div>
-        <div class="whatsapp-bubble" style="right: 15%; top: 30%; width: 70px; height: 70px;"></div>
-        <div class="whatsapp-bubble" style="left: 20%; bottom: 20%; width: 40px; height: 40px;"></div>
-        <div class="whatsapp-bubble" style="right: 25%; bottom: 30%; width: 60px; height: 60px;"></div>
+    <section class="portfolio-showcase">
+  <h2 class="section-title">Meet Our Team</h2>
+  <div class="team-grid">
+  <!-- Member 1 -->
+  <div class="team-member">
+    <div class="profile-icon" style="background: #FF6B6B;">FH</div>
+    <div class="member-info">
+      <h3>Faisal Hanif</h3>
+      <span class="category">Development, Editor, Animator</span>
+      <span class="role">CEO, Founder, Leader</span>
+      <div class="skill-chart">
+        <div class="skill-bar" style="width: 85%;">85%</div>
       </div>
-      <div class="whatsapp-container">
-        <h2 class="section-title">Let's Connect on WhatsApp</h2>
-        <p style="margin-bottom: 2rem; color: #666; font-size: 1.1rem;">
-          Get instant responses and personalized consultations through WhatsApp
-        </p>
-        <a href="http://wa.me/923302126300" class="whatsapp-btn" target="_blank">
-          <svg class="whatsapp-icon" viewBox="0 0 24 24">
-            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 1.856.001 3.598.723 4.907 2.034 1.31 1.311 2.031 3.054 2.03 4.908-.001 3.825-3.113 6.938-6.937 6.938z"/>
-          </svg>
-          Chat with me on WhatsApp
-        </a>
+    </div>
+  </div>
+
+  <!-- Member 2 -->
+  <div class="team-member">
+    <div class="profile-icon" style="background: #4ECDC4;">AM</div>
+    <div class="member-info">
+      <h3>Abdul Moiz</h3>
+      <span class="category">Design</span>
+      <span class="role">UI/UX Lead</span>
+      <div class="skill-chart">
+        <div class="skill-bar" style="width: 92%;">92%</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Member 3 -->
+  <div class="team-member">
+    <div class="profile-icon" style="background: #45B7D1;">AH</div>
+    <div class="member-info">
+      <h3>Abdul Haseeb</h3>
+      <span class="category">Backend</span>
+      <span class="role">System Architect</span>
+      <div class="skill-chart">
+        <div class="skill-bar" style="width: 88%;">88%</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Member 4 -->
+  <div class="team-member">
+    <div class="profile-icon" style="background: #96CEB4;">MK</div>
+    <div class="member-info">
+      <h3>Muhammad Kashif</h3>
+      <span class="category">Video Editing</span>
+      <span class="role">Short Video ads</span>
+      <div class="skill-chart">
+        <div class="skill-bar" style="width: 78%;">78%</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Member 5 -->
+  <div class="team-member">
+    <div class="profile-icon" style="background: #FFD93D;">HR</div>
+    <div class="member-info">
+      <h3>Hassan Raza</h3>
+      <span class="category">Video Editing</span>
+      <span class="role">Social Media Ads</span>
+      <div class="skill-chart">
+        <div class="skill-bar" style="width: 82%;">82%</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Member 6 -->
+  <div class="team-member">
+    <div class="profile-icon" style="background: #6C5B7B;">AR</div>
+    <div class="member-info">
+      <h3>Ali Raza</h3>
+      <span class="category">Senior Editor</span>
+      <span class="role">Expert youtube video editor</span>
+      <div class="skill-chart">
+        <div class="skill-bar" style="width: 95%;">95%</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Member 7 -->
+  <div class="team-member">
+    <div class="profile-icon" style="background: #FF8C94;">HA</div>
+    <div class="member-info">
+      <h3>Hassan Ali</h3>
+      <span class="category">Graphics</span>
+      <span class="role">Graphics Expert</span>
+      <div class="skill-chart">
+        <div class="skill-bar" style="width: 90%;">90%</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Member 8 -->
+  <div class="team-member">
+    <div class="profile-icon" style="background: #A8E6CF;">AR</div>
+    <div class="member-info">
+      <h3>Abdul Rehman</h3>
+      <span class="category">Marketing/span>
+      <span class="role">SEO Specialist</span>
+      <div class="skill-chart">
+        <div class="skill-bar" style="width: 87%;">87%</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Member 9 -->
+  <div class="team-member">
+    <div class="profile-icon" style="background: #DCD6F7;">AR</div>
+    <div class="member-info">
+      <h3>Ahsan Raza</h3>
+      <span class="category">Expert Editor</span>
+      <span class="role">Short ai reels</span>
+      <div class="skill-chart">
+        <div class="skill-bar" style="width: 83%;">83%</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Member 10 -->
+  <div class="team-member">
+    <div class="profile-icon" style="background: #F4A261;">MA</div>
+    <div class="member-info">
+      <h3>Muhammad Azlan</h3>
+      <span class="category">Ai Technology</span>
+      <span class="role">Ai Specialist</span>
+      <div class="skill-chart">
+        <div class="skill-bar" style="width: 89%;">89%</div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 1.5rem;
+    }
+
+    .team-member {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .team-member:hover {
+      transform: translateY(-5px);
+    }
+
+    .profile-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: white;
+      font-size: 1.2rem;
+    }
+
+    .member-info {
+      flex: 1;
+    }
+
+    .member-info h3 {
+      margin: 0;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .category {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 12px;
+      background: #f0f0f0;
+      font-size: 0.8rem;
+      color: #666;
+      margin: 0.5rem 0;
+    }
+
+    .role {
+      display: block;
+      font-size: 0.9rem;
+      color: #888;
+      margin-bottom: 0.5rem;
+    }
+
+    .skill-chart {
+      width: 100%;
+      height: 6px;
+      background: #f0f0f0;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .skill-bar {
+      height: 100%;
+      background: var(--primary);
+      border-radius: 3px;
+      transition: width 1s ease;
+      font-size: 0.7rem;
+      color: transparent;
+      text-align: right;
+    }
+
+    .team-member:hover .skill-bar {
+      color: white;
+      padding-right: 5px;
+    }
+  </style>
+</div>
+
+  <style>
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .team-member {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .team-member:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+    }
+
+    .member-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: linear-gradient(145deg, #f8f9ff, #ffffff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .member-photo svg {
+      width: 60%;
+      height: 60%;
+      opacity: 0.8;
+    }
+
+    .member-info h3 {
+      color: var(--dark);
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .designation {
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .bio {
+      color: #666;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .member-social {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .social-link {
+      width: 35px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: var(--light);
+      color: var(--primary);
+      transition: all 0.3s ease;
+    }
+
+    .social-link:hover {
+      background: var(--primary);
+      color: white;
+      transform: translateY(-3px);
+    }
+
+    .social-link svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    @media (max-width: 768px) {
+      .team-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+      }
+    }
+  </style>
+</section>
+
+    <section class="service-bundles">
+      <h2 class="section-title">Custom Service Bundles</h2>
+      <div class="bundle-container">
+        <div class="bundle-card">
+          <div class="bundle-header">
+            <h3>Startup Bundle</h3>
+          </div>
+          <div class="bundle-price">$999</div>
+          <ul class="bundle-features">
+            <li><svg width="20" height="20" fill="var(--primary)"><path d="M10 15l-5-5h10z"></path></svg>Website Development</li>
+            <li><svg width="20" height="20" fill="var(--primary)"><path d="M10 15l-5-5h10z"></path></svg>Graphic Design</li>
+            <li><svg width="20" height="20" fill="var(--primary)"><path d="M10 15l-5-5h10z"></path></svg>SEO Optimization</li>
+          </ul>
+        </div>
+
+        <div class="bundle-card">
+          <div class="bundle-header">
+            <h3>Growth Bundle</h3>
+          </div>
+          <div class="bundle-price">$1499</div>
+          <ul class="bundle-features">
+            <li><svg width="20" height="20" fill="var(--primary)"><path d="M10 15l-5-5h10z"></path></svg>Web Development</li>
+            <li><svg width="20" height="20" fill="var(--primary)"><path d="M10 15l-5-5h10z"></path></svg>Content Strategy</li>
+            <li><svg width="20" height="20" fill="var(--primary)"><path d="M10 15l-5-5h10z"></path></svg>Social Media Mgmt</li>
+            <li><svg width="20" height="20" fill="var(--primary)"><path d="M10 15l-5-5h10z"></path></svg>Email Marketing</li>
+          </ul>
+        </div>
+
+        <div class="bundle-card">
+          <div class="bundle-header">
+            <h3>Ultimate Bundle</h3>
+          </div>
+          <div class="bundle-price">$2499</div>
+          <ul class="bundle-features">
+            <li><svg width="20" height="20" fill="var(--primary)"><path d="M10 15l-5-5h10z"></path></svg>All Services</li>
+            <li><svg width="20" height="20" fill="var(--primary)"><path d="M10 15l-5-5h10z"></path></svg>24/7 Support</li>
+            <li><svg width="20" height="20" fill="var(--primary)"><path d="M10 15l-5-5h10z"></path></svg>Custom Projects</li>
+          </ul>
+        </div>
       </div>
     </section>
+
+    <section class="ai-tools">
+  <h2 class="section-title">AI-Powered Solutions</h2>
+  <div class="ai-grid">
+    <!-- ChatGPT -->
+    <div class="ai-tool-card">
+      <div class="tool-icon chat-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12z"></path>
+          <path d="M7 9h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2z"></path>
+        </svg>
+      </div>
+      <h3>ChatGPT Integration</h3>
+      <p>Enhanced customer engagement with AI-powered chat solutions</p>
+      <div class="success-metric">
+        <span>+45% Customer Satisfaction</span>
+      </div>
+    </div>
+
+    <!-- Canva -->
+    <div class="ai-tool-card">
+      <div class="tool-icon canva-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path>
+          <path d="M13.49 11.38c.43-1.22.17-2.64-.81-3.62-1.11-1.11-2.79-1.3-4.1-.59l2.35 2.35-1.41 1.41-2.35-2.35c-.71 1.32-.52 2.99.59 4.1.98.98 2.4 1.24 3.62.81l3.41 3.41c.2.2.51.2.71 0l1.4-1.4c.2-.2.2-.51 0-.71l-3.41-3.41z"></path>
+        </svg>
+      </div>
+      <h3>Canva AI Design</h3>
+      <p>Smart design automation for brand consistency</p>
+      <div class="success-metric">
+        <span>200+ Designs Automated</span>
+      </div>
+    </div>
+
+    <!-- Adobe AI -->
+    <div class="ai-tool-card">
+      <div class="tool-icon adobe-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M9.07 7L6 19h2.99l0.7-3h3.16l0.7 3h2.99L13.93 7H9.07zM9.4 14l1.1-4.72L11.6 14H9.4z"></path>
+          <path d="M19 3H5C3.9 3 3 3.9 3 5v14c0 1.1 0.9 2 2 2h14c1.1 0 2-0.9 2-2V5C21 3.9 20.1 3 19 3z"></path>
+        </svg>
+      </div>
+      <h3>Adobe Creative AI</h3>
+      <p>Advanced AI-powered creative workflows</p>
+      <div class="success-metric">
+        <span>+60% Production Speed</span>
+      </div>
+    </div>
+
+    <!-- Midjourney -->
+    <div class="ai-tool-card">
+      <div class="tool-icon midjourney-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20 3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H4V5h16v14z"></path>
+          <path d="M12 16l4-4h-3V8h-2v4H8z"></path>
+        </svg>
+      </div>
+      <h3>Midjourney</h3>
+      <p>AI-generated artwork and visual concepts</p>
+      <div class="success-metric">
+        <span>1000+ Unique Artworks</span>
+      </div>
+    </div>
+
+    <!-- DALL-E -->
+    <div class="ai-tool-card">
+      <div class="tool-icon dalle-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path>
+          <path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"></path>
+        </svg>
+      </div>
+      <h3>DALL-E</h3>
+      <p>AI image generation for creative projects</p>
+      <div class="success-metric">
+        <span>500+ Client Designs</span>
+      </div>
+    </div>
+
+    <!-- Copy AI -->
+    <div class="ai-tool-card">
+      <div class="tool-icon copyai-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"></path>
+        </svg>
+      </div>
+      <h3>AI Videos</h3>
+      <p>AI-powered premium video editing</p>
+      <div class="success-metric">
+        <span>+75% Content Creation Speed</span>
+      </div>
+    </div>
+
+    <style>
+      .ai-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        padding: 2rem;
+      }
+
+      .ai-tool-card {
+        background: white;
+        border-radius: 15px;
+        padding: 2rem;
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .ai-tool-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+      }
+
+      .tool-icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        color: white;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .tool-icon svg {
+        width: 35px;
+        height: 35px;
+        z-index: 1;
+      }
+
+      .tool-icon::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 12px;
+        background: linear-gradient(135deg, var(--primary), #2ce88e);
+        opacity: 0.9;
+      }
+
+      .chat-icon::before { background: linear-gradient(135deg, #74aa9c, #2ce88e); }
+      .canva-icon::before { background: linear-gradient(135deg, #00c4cc, #2ce88e); }
+      .adobe-icon::before { background: linear-gradient(135deg, #ff0000, #ff9a00); }
+      .midjourney-icon::before { background: linear-gradient(135deg, #7289da, #99aab5); }
+      .dalle-icon::before { background: linear-gradient(135deg, #ff6b6b, #ffd93d); }
+      .copyai-icon::before { background: linear-gradient(135deg, #6c5ce7, #a8e6cf); }
+
+      .ai-tool-card h3 {
+        color: var(--dark);
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+      }
+
+      .ai-tool-card p {
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+      }
+
+      .success-metric {
+        background: var(--light);
+        padding: 0.8rem 1.2rem;
+        border-radius: 8px;
+        display: inline-block;
+      }
+
+      .success-metric span {
+        color: var(--primary);
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 768px) {
+        .ai-grid {
+          grid-template-columns: 1fr;
+          padding: 1rem;
+        }
+      }
+    </style>
+  </div>
+</section>
+
+    <section class="media-gallery">
+</section>
+
+    <section class="awards">
+  <h2 class="section-title">Awards &amp; Recognition</h2>
+  <div class="awards-grid">
+    <!-- Top Freelancer Award -->
+    <div class="award-card">
+      <div class="award-icon-wrapper">
+        <svg class="award-icon" viewBox="0 0 24 24" fill="var(--primary)">
+          <path d="M12 2L9.2 8.6 2 9.2 7 14.3 5.8 21.4 12 18.1l6.2 3.3-1.2-7.1 5-5.1-7.2-.6z"></path>
+        </svg>
+        <div class="award-glow"></div>
+      </div>
+      <h3>Top Rated Freelancer 2023</h3>
+      <span class="award-metric">Top 1% Worldwide</span>
+    </div>
+
+    <!-- Client Satisfaction Award -->
+    <div class="award-card">
+      <div class="award-icon-wrapper">
+        <svg class="award-icon" viewBox="0 0 24 24" fill="#FF6B6B">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+        </svg>
+        <div class="award-glow"></div>
+      </div>
+      <h3>Client Choice Award</h3>
+      <span class="award-metric">100% Satisfaction Rate</span>
+    </div>
+
+    <!-- Innovation Award -->
+    <div class="award-card">
+      <div class="award-icon-wrapper">
+        <svg class="award-icon" viewBox="0 0 24 24" fill="#4ECDC4">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-10.99L15 12l-4 4-4-4 1.41-1.41L11 13.17V7h2v6.17l2.59-2.58L17 12l-4 4-4-4 1.41-1.41L13 13.17V7h-2v6.17z"></path>
+        </svg>
+        <div class="award-glow"></div>
+      </div>
+      <h3>Innovation Excellence</h3>
+      <span class="award-metric">Best Tech Solutions</span>
+    </div>
+
+    <!-- Rising Talent Award -->
+    <div class="award-card">
+      <div class="award-icon-wrapper">
+        <svg class="award-icon" viewBox="0 0 24 24" fill="#FFD93D">
+          <path d="M12 8V4l8 8-8 8v-4H4V8z"></path>
+        </svg>
+        <div class="award-glow"></div>
+      </div>
+      <h3>Rising Talent 2023</h3>
+      <span class="award-metric">500% Growth Rate</span>
+    </div>
+
+    <!-- Quality Badge -->
+    <div class="award-card">
+      <div class="award-icon-wrapper">
+        <svg class="award-icon" viewBox="0 0 24 24" fill="#6C5CE7">
+          <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-8.29 13.29c-.39.39-1.02.39-1.41 0L5.71 12.7c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0L10 14.17l6.88-6.88c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41l-7.58 7.59z"></path>
+        </svg>
+        <div class="award-glow"></div>
+      </div>
+      <h3>Quality Excellence</h3>
+      <span class="award-metric">Zero Revision Rate</span>
+    </div>
+
+    <!-- Speed Champion -->
+    <div class="award-card">
+      <div class="award-icon-wrapper">
+        <svg class="award-icon" viewBox="0 0 24 24" fill="#FF8C94">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm1-13h-2v6l5.2 3.2.8-1.3-4-2.4V7z"></path>
+        </svg>
+        <div class="award-glow"></div>
+      </div>
+      <h3>Speed Champion</h3>
+      <span class="award-metric">24h Delivery Expert</span>
+    </div>
+
+    <style>
+      .awards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        padding: 2rem;
+      }
+
+      .award-card {
+        background: white;
+        border-radius: 20px;
+        padding: 2rem;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .award-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+      }
+
+      .award-icon-wrapper {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 1.5rem;
+      }
+
+      .award-icon {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 2;
+        animation: float 3s ease-in-out infinite;
+      }
+
+      .award-glow {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        background: inherit;
+        filter: blur(20px);
+        opacity: 0.5;
+        z-index: 1;
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      .award-card h3 {
+        color: var(--dark);
+        margin: 1rem 0;
+        font-size: 1.2rem;
+      }
+
+      .award-metric {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background: var(--light);
+        border-radius: 20px;
+        font-size: 0.9rem;
+        color: var(--primary);
+        font-weight: 600;
+      }
+
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+
+      @keyframes pulse {
+        0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+        50% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.2; }
+      }
+
+      .award-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, var(--primary), transparent);
+      }
+    </style>
+  </div>
+</section>
+
+    <section class="case-studies">
+  <h2 class="section-title">Featured Case Studies</h2>
+  <div class="case-grid">
+    <div class="case-card">
+      <div class="case-ribbon">E-commerce Success</div>
+      <div class="case-content">
+        <div class="case-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"></path>
+          </svg>
+        </div>
+        <h3>Fashion Store Transformation</h3>
+        <div class="case-metrics">
+          <div class="metric">
+            <span class="metric-value">+245%</span>
+            <span class="metric-label">Revenue Growth</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">3.2x</span>
+            <span class="metric-label">Conversion Rate</span>
+          </div>
+        </div>
+        <p>Complete e-commerce transformation including UX redesign, performance optimization, and advanced analytics integration.</p>
+        <div class="case-tags">
+          <span>Shopify</span>
+          <span>UX Design</span>
+          <span>Analytics</span>
+        </div>
+        <div class="chart-container">
+          <div class="chart-bar" style="--height: 30%"></div>
+          <div class="chart-bar" style="--height: 45%"></div>
+          <div class="chart-bar" style="--height: 65%"></div>
+          <div class="chart-bar" style="--height: 85%"></div>
+          <div class="chart-bar" style="--height: 95%"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-card">
+      <div class="case-ribbon">SaaS Platform</div>
+      <div class="case-content">
+        <div class="case-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"></path>
+          </svg>
+        </div>
+        <h3>Cloud Software Launch</h3>
+        <div class="case-metrics">
+          <div class="metric">
+            <span class="metric-value">50K+</span>
+            <span class="metric-label">Active Users</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">98%</span>
+            <span class="metric-label">Uptime</span>
+          </div>
+        </div>
+        <p>Built and launched a scalable SaaS platform with real-time collaboration features and enterprise-grade security.</p>
+        <div class="case-tags">
+          <span>React</span>
+          <span>Node.js</span>
+          <span>AWS</span>
+        </div>
+        <div class="progress-ring">
+          <svg viewBox="0 0 120 120">
+            <circle class="progress-ring-circle" cx="60" cy="60" r="54"></circle>
+          </svg>
+          <span class="progress-text">98%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .case-studies {
+      padding: 4rem 0;
+      background: linear-gradient(145deg, #ffffff, #f8f9ff);
+    }
+
+    .case-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .case-card {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+      position: relative;
+    }
+
+    .case-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+    }
+
+    .case-ribbon {
+      position: absolute;
+      top: 20px;
+      right: -35px;
+      background: var(--primary);
+      color: white;
+      padding: 0.5rem 3rem;
+      transform: rotate(45deg);
+      font-size: 0.9rem;
+      font-weight: 500;
+      box-shadow: 0 2px 10px rgba(29, 191, 115, 0.3);
+    }
+
+    .case-content {
+      padding: 2rem;
+    }
+
+    .case-icon {
+      width: 60px;
+      height: 60px;
+      background: var(--light);
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      color: var(--primary);
+    }
+
+    .case-icon svg {
+      width: 32px;
+      height: 32px;
+    }
+
+    .case-metrics {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+
+    .metric {
+      text-align: center;
+      padding: 1rem;
+      background: var(--light);
+      border-radius: 12px;
+      transition: all 0.3s ease;
+    }
+
+    .metric:hover {
+      transform: translateY(-5px);
+      background: var(--primary);
+      color: white;
+    }
+
+    .metric-value {
+      display: block;
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: var(--primary);
+    }
+
+    .metric:hover .metric-value {
+      color: white;
+    }
+
+    .metric-label {
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    .case-tags {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin: 1.5rem 0;
+    }
+
+    .case-tags span {
+      background: var(--light);
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      color: var(--primary);
+      transition: all 0.3s ease;
+    }
+
+    .case-tags span:hover {
+      background: var(--primary);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .chart-container {
+      height: 100px;
+      display: flex;
+      align-items: flex-end;
+      gap: 8px;
+      margin-top: 2rem;
+    }
+
+    .chart-bar {
+      flex: 1;
+      height: var(--height);
+      background: linear-gradient(to top, var(--primary), #2ce88e);
+      border-radius: 4px;
+      transition: height 1s cubic-bezier(0.4, 0, 0.2, 1);
+      animation: growUp 1.5s ease-out forwards;
+      opacity: 0.8;
+    }
+
+    .chart-bar:hover {
+      opacity: 1;
+      transform: scaleY(1.1);
+    }
+
+    .progress-ring {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      margin: 2rem auto 0;
+    }
+
+    .progress-ring-circle {
+      fill: none;
+      stroke: var(--primary);
+      stroke-width: 8;
+      stroke-linecap: round;
+      stroke-dasharray: 339.292;
+      stroke-dashoffset: 339.292;
+      transform: rotate(-90deg);
+      transform-origin: center;
+      animation: progressRing 2s ease-out forwards;
+    }
+
+    .progress-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--primary);
+    }
+
+    @keyframes growUp {
+      from {
+        height: 0;
+        opacity: 0;
+      }
+      to {
+        height: var(--height);
+        opacity: 0.8;
+      }
+    }
+
+    @keyframes progressRing {
+      to {
+        stroke-dashoffset: 6.78584; /* 339.292 * 0.02 (2% of the circle) */
+      }
+    }
+
+    @media (max-width: 768px) {
+      .case-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+      }
+    }
+  </style>
+
+  <script>
+    // Animate charts on scroll
+    const chartObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.querySelectorAll('.chart-bar').forEach((bar, index) => {
+            setTimeout(() => {
+              bar.style.height = bar.style.getPropertyValue('--height');
+            }, index * 100);
+          });
+        }
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.chart-container').forEach(chart => {
+      chartObserver.observe(chart);
+    });
+  </script>
+</section>
+
+    <section class="blog">
+  <h2 class="section-title">Latest Insights</h2>
+  <div class="blog-insights-container">
+    <!-- Analytics Card -->
+    <div class="insight-card">
+      <div class="insight-header">
+        <h3>Web Development Trends</h3>
+        <span class="date">Last 30 Days</span>
+      </div>
+      <div class="trend-chart">
+        <canvas id="trendChart"></canvas>
+      </div>
+      <div class="insight-stats">
+        <div class="stat-item">
+          <span class="stat-value">+47%</span>
+          <span class="stat-label">Growth</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">2.3K</span>
+          <span class="stat-label">Views</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technology Distribution -->
+    <div class="insight-card">
+      <div class="insight-header">
+        <h3>Technology Stack</h3>
+        <span class="date">2023 Overview</span>
+      </div>
+      <div class="donut-chart">
+        <canvas id="techDonut"></canvas>
+      </div>
+      <div class="tech-legend">
+        <div class="legend-item">
+          <span class="dot" style="background: #1dbf73"></span>
+          <span>React</span>
+        </div>
+        <div class="legend-item">
+          <span class="dot" style="background: #2ce88e"></span>
+          <span>Node.js</span>
+        </div>
+        <div class="legend-item">
+          <span class="dot" style="background: #98f5e1"></span>
+          <span>Python</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Performance Metrics -->
+    <div class="insight-card">
+      <div class="insight-header">
+        <h3>Performance Metrics</h3>
+        <span class="date">Real-time</span>
+      </div>
+      <div class="metrics-grid">
+        <div class="metric-item">
+          <div class="circular-progress">
+            <svg viewBox="0 0 36 36" class="circular-chart">
+              <path d="M18 2.0845
+                a 15.9155 15.9155 0 0 1 0 31.831
+                a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path>
+              <path d="M18 2.0845
+                a 15.9155 15.9155 0 0 1 0 31.831
+                a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" style="stroke-dasharray: 75, 100;"></path>
+            </svg>
+            <span class="percentage">75%</span>
+          </div>
+          <span class="metric-label">Speed Index</span>
+        </div>
+        <div class="metric-item">
+          <div class="circular-progress">
+            <svg viewBox="0 0 36 36" class="circular-chart">
+              <path d="M18 2.0845
+                a 15.9155 15.9155 0 0 1 0 31.831
+                a 15.9155 15.9155 0 0 1 0 -31.831" class="circle-bg"></path>
+              <path d="M18 2.0845
+                a 15.9155 15.9155 0 0 1 0 31.831
+                a 15.9155 15.9155 0 0 1 0 -31.831" class="circle" style="stroke-dasharray: 90, 100;"></path>
+            </svg>
+            <span class="percentage">90%</span>
+          </div>
+          <span class="metric-label">Accessibility</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .blog {
+      padding: 4rem 0;
+      background: white;
+    }
+
+    .blog-insights-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .insight-card {
+      background: white;
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .insight-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .insight-header {
+      margin-bottom: 2rem;
+    }
+
+    .insight-header h3 {
+      color: var(--dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .date {
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .trend-chart {
+      height: 200px;
+      margin-bottom: 1.5rem;
+    }
+
+    .insight-stats {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 1rem;
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-value {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--primary);
+    }
+
+    .stat-label {
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .donut-chart {
+      height: 200px;
+      margin: 1rem 0;
+    }
+
+    .tech-legend {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .metric-item {
+      text-align: center;
+    }
+
+    .circular-progress {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 1rem;
+    }
+
+    .circular-chart {
+      width: 100%;
+      height: 100%;
+      transform: rotate(-90deg);
+    }
+
+    .circle-bg {
+      fill: none;
+      stroke: #eee;
+      stroke-width: 2.8;
+    }
+
+    .circle {
+      fill: none;
+      stroke: var(--primary);
+      stroke-width: 2.8;
+      stroke-linecap: round;
+      animation: progress 1.5s ease-out forwards;
+    }
+
+    .percentage {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: var(--primary);
+    }
+
+    @keyframes progress {
+      0% {
+        stroke-dasharray: 0 100;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .blog-insights-container {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+      }
+    }
+  </style>
+
+  <script>
+    // Initialize charts when the document is loaded
+    document.addEventListener('DOMContentLoaded', () => {
+      // Trend Chart
+      const trendCtx = document.getElementById('trendChart').getContext('2d');
+      new Chart(trendCtx, {
+        type: 'line',
+        data: {
+          labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+          datasets: [{
+            label: 'Trend',
+            data: [30, 45, 40, 60, 55, 75],
+            borderColor: '#1dbf73',
+            backgroundColor: 'rgba(29, 191, 115, 0.1)',
+            tension: 0.4,
+            fill: true
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              grid: {
+                display: false
+              }
+            },
+            x: {
+              grid: {
+                display: false
+              }
+            }
+          }
+        }
+      });
+
+      // Technology Distribution Donut
+      const techCtx = document.getElementById('techDonut').getContext('2d');
+      new Chart(techCtx, {
+        type: 'doughnut',
+        data: {
+          labels: ['React', 'Node.js', 'Python'],
+          datasets: [{
+            data: [40, 35, 25],
+            backgroundColor: ['#1dbf73', '#2ce88e', '#98f5e1'],
+            borderWidth: 0
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          cutout: '70%'
+        }
+      });
+    });
+
+    // Animate circular progress on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.querySelector('.circle').style.animation = 'progress 1.5s ease-out forwards';
+        }
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.circular-progress').forEach(progress => {
+      observer.observe(progress);
+    });
+  </script>
+</section>
+
+    <section class="faq">
+  <h2 class="section-title">Frequently Asked Questions</h2>
+  <div class="faq-container">
+    <!-- Q1 -->
+    <div class="faq-item">
+      <div class="faq-question">
+        What services do you offer?
+        <svg width="20" height="20" fill="var(--primary)">
+          <path d="M7 10l5 5 5-5z"></path>
+        </svg>
+      </div>
+      <div class="faq-answer">
+        <p>I offer comprehensive digital solutions including web development, UI/UX design, e-commerce development, mobile app development, digital marketing, SEO optimization, and custom software solutions. Each service is tailored to meet specific client needs.</p>
+      </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="faq-item">
+      <div class="faq-question">
+        How long does a typical project take?
+        <svg width="20" height="20" fill="var(--primary)">
+          <path d="M7 10l5 5 5-5z"></path>
+        </svg>
+      </div>
+      <div class="faq-answer">
+        <p>Project timelines vary based on complexity and requirements. A simple website might take 2-3 weeks, while complex e-commerce platforms could take 2-3 months. I provide detailed timelines during initial consultations.</p>
+      </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="faq-item">
+      <div class="faq-question">
+        What is your pricing structure?
+        <svg width="20" height="20" fill="var(--primary)">
+          <path d="M7 10l5 5 5-5z"></path>
+        </svg>
+      </div>
+      <div class="faq-answer">
+        <p>Pricing varies based on project scope and requirements. I offer flexible packages starting from $999 for basic websites to custom quotes for enterprise solutions. All projects include clear milestone-based payment schedules.</p>
+      </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="faq-item">
+      <div class="faq-question">
+        Do you offer post-launch support?
+        <svg width="20" height="20" fill="var(--primary)">
+          <path d="M7 10l5 5 5-5z"></path>
+        </svg>
+      </div>
+      <div class="faq-answer">
+        <p>Yes, I provide comprehensive post-launch support including maintenance, updates, and technical support. Different support packages are available to suit various needs and budgets.</p>
+      </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="faq-item">
+      <div class="faq-question">
+        How do you handle revisions?
+        <svg width="20" height="20" fill="var(--primary)">
+          <path d="M7 10l5 5 5-5z"></path>
+        </svg>
+      </div>
+      <div class="faq-answer">
+        <p>All projects include 2-3 rounds of revisions. Additional revisions are available at a reasonable rate. I ensure complete client satisfaction before project completion.</p>
+      </div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="faq-item">
+      <div class="faq-question">
+        What technologies do you work with?
+        <svg width="20" height="20" fill="var(--primary)">
+          <path d="M7 10l5 5 5-5z"></path>
+        </svg>
+      </div>
+      <div class="faq-answer">
+        <p>I work with a wide range of technologies including React, Node.js, Python, WordPress, PHP, Laravel, and various cloud platforms. The technology stack is chosen based on project requirements and scalability needs.</p>
+      </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="faq-item">
+      <div class="faq-question">
+        How do you ensure project security?
+        <svg width="20" height="20" fill="var(--primary)">
+          <path d="M7 10l5 5 5-5z"></path>
+        </svg>
+      </div>
+      <div class="faq-answer">
+        <p>Security is a top priority. I implement industry-standard security measures, regular security audits, SSL certificates, and follow best practices for data protection and privacy compliance.</p>
+      </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="faq-item">
+      <div class="faq-question">
+        Do you offer SEO services?
+        <svg width="20" height="20" fill="var(--primary)">
+          <path d="M7 10l5 5 5-5z"></path>
+        </svg>
+      </div>
+      <div class="faq-answer">
+        <p>Yes, I provide comprehensive SEO services including keyword research, on-page optimization, technical SEO, content strategy, and regular performance monitoring and reporting.</p>
+      </div>
+    </div>
+
+    <!-- Q9 -->
+    <div class="faq-item">
+      <div class="faq-question">
+        Can you handle multiple projects simultaneously?
+        <svg width="20" height="20" fill="var(--primary)">
+          <path d="M7 10l5 5 5-5z"></path>
+        </svg>
+      </div>
+      <div class="faq-answer">
+        <p>Yes, I have a dedicated team that allows me to handle multiple projects efficiently while maintaining quality and meeting deadlines. Each project gets dedicated attention and resources.</p>
+      </div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="faq-item">
+      <div class="faq-question">
+        What is your communication process?
+        <svg width="20" height="20" fill="var(--primary)">
+          <path d="M7 10l5 5 5-5z"></path>
+        </svg>
+      </div>
+      <div class="faq-answer">
+        <p>I maintain regular communication through scheduled updates, progress reports, and quick response times. Clients can reach me through email, Skype, or scheduled video calls.</p>
+      </div>
+    </div>
+
+    <!-- Q11 -->
+    <div class="faq-item">
+      <div class="faq-question">
+        Do you offer mobile app development?
+        <svg width="20" height="20" fill="var(--primary)">
+          <path d="M7 10l5 5 5-5z"></path>
+        </svg>
+      </div>
+      <div class="faq-answer">
+        <p>Yes, I develop both native and cross-platform mobile applications using React Native, Flutter, and native technologies for iOS and Android platforms.</p>
+      </div>
+    </div>
+
+    <!-- Q12 -->
+    <div class="faq-item">
+      <div class="faq-question">
+        What makes your services unique?
+        <svg width="20" height="20" fill="var(--primary)">
+          <path d="M7 10l5 5 5-5z"></path>
+        </svg>
+      </div>
+      <div class="faq-answer">
+        <p>My services stand out through personalized attention, proven expertise, cutting-edge technology implementation, and a strong focus on delivering measurable business results.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <style>
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .faq-item {
+      background: white;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+
+    .faq-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+    }
+
+    .faq-question {
+      padding: 1.5rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+      color: var(--dark);
+      transition: all 0.3s ease;
+    }
+
+    .faq-question svg {
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.active .faq-question {
+      color: var(--primary);
+    }
+
+    .faq-item.active .faq-question svg {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      padding: 0 1.5rem;
+      height: 0;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .faq-item.active .faq-answer {
+      height: auto;
+      padding: 1.5rem;
+      background: var(--light);
+    }
+
+    .faq-answer p {
+      color: #666;
+      line-height: 1.6;
+      margin: 0;
+    }
+  </style>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const item = question.parentElement;
+        const isActive = item.classList.contains('active');
+        
+        // Close all FAQ items
+        document.querySelectorAll('.faq-item').forEach(faqItem => {
+          faqItem.classList.remove('active');
+          const answer = faqItem.querySelector('.faq-answer');
+          answer.style.height = '0';
+        });
+        
+        // Open clicked item if it wasn't active
+        if (!isActive) {
+          item.classList.add('active');
+          const answer = item.querySelector('.faq-answer');
+          answer.style.height = answer.scrollHeight + 'px';
+        }
+      });
+    });
+  </script>
+</section>
 
   </main>
 
   <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-section">
-        <h3>Contact Me</h3>
-        <p>Email: faisalhanif652@gmail.com</p>
-        <p>Skype: thefaisalhanif</p>
-        <p>Available: Mon-Sat 9AM-6PM EST</p>
-      </div>
-      <div class="footer-section">
-        <h3>Quick Links</h3>
-        <a href="http://wa.me/923302126300">Fiverr Profile</a>
-        <a href="http://wa.me/923302126300">Upwork Profile</a>
-        <a href="https://www.linkedin.com/in/thefaisalhanif">LinkedIn</a>
-      </div>
-      <div class="footer-section">
-        <h3>Connect</h3>
-        <div class="social-links">
-          <a href="https://twitter.com/profile"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a>
-          <a href="https://linkedin.com/profile"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
-          <a href="https://github.com/profile"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
-        </div>
-      </div>
+    <div class="contact-cta">
+        <div>
+</div>
     </div>
-  </footer>
+
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Connect With Me</h3>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon-wrapper">
+                        <span class="contact-icon">📧</span>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div>
+                        <p>Email</p>
+                        <a href="mailto:faisalhanif652@gmail.com" class="contact-link">faisalhanif652@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon-wrapper">
+                        <span class="contact-icon">💬</span>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div>
+                        <p>Skype</p>
+                        <a href="skype:faisal.hanif" class="contact-link">@thefaisalhanif</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon-wrapper">
+                        <span class="contact-icon">⏰</span>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div>
+                        <p>Available Hours</p>
+                        <span class="availability">Mon-Fri 9AM-9PM EST</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Access</h3>
+            <div class="quick-links">
+                <a href="http://wa.me/923302126300" class="footer-link">
+                    <div class="link-icon-wrapper">
+                        <span class="link-icon">🌟</span>
+                        <div class="icon-pulse"></div>
+                    </div>
+                    <span>Fiverr Profile</span>
+                </a>
+                <a href="http://wa.me/923302126300" class="footer-link">
+                    <div class="link-icon-wrapper">
+                        <span class="link-icon">💼</span>
+                        <div class="icon-pulse"></div>
+                    </div>
+                    <span>Upwork Profile</span>
+                </a>
+                <a href="https://www.linkedin.com/in/thefaisalhanif" class="footer-link">
+                    <div class="link-icon-wrapper">
+                        <span class="link-icon">👥</span>
+                        <div class="icon-pulse"></div>
+                    </div>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+    <h3>Social Network</h3>
+    <div class="social-links">
+        <a href="http://wa.me/923302126300" class="social-btn whatsapp">
+            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+            </svg>
+            <div class="btn-glow"></div>
+        </a>
+        <a href="https://twitter.com/thefaisalhanif" class="social-btn twitter">
+            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+            </svg>
+            <div class="btn-glow"></div>
+        </a>
+        <a href="https://linkedin.com/in/thefaisalhanif" class="social-btn linkedin">
+            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+            </svg>
+            <div class="btn-glow"></div>
+        </a>
+        <a href="https://github.com/fesii007" class="social-btn github">
+            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+            </svg>
+            <div class="btn-glow"></div>
+        </a>
+    </div>
+
+    <style>
+    .social-btn.whatsapp {
+        background: #25D366;
+    }
+    .social-btn.whatsapp:hover {
+        background: #128C7E;
+    }
+    .social-btn.whatsapp .btn-glow {
+        background: #25D366;
+    }
+    </style>
+</div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2024-25 All Rights Reserved</p>
+    </div>
+
+    <style>
+    .footer {
+        background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+        color: white;
+        padding: 6rem 0 2rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .contact-cta {
+        position: absolute;
+        top: -80px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 600px;
+        z-index: 10;
+    }
+
+    .contact-bubble {
+        background: linear-gradient(145deg, #ffffff, #f8f9ff);
+        border-radius: 30px;
+        padding: 3rem;
+        text-align: center;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        position: relative;
+        overflow: hidden;
+        margin: 0 1rem;
+    }
+
+    .bubble-content h4 {
+        color: var(--dark);
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        background: linear-gradient(45deg, var(--primary), #2ce88e);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .bubble-content p {
+        color: #666;
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+    }
+
+    .contact-btn {
+        display: inline-block;
+        background: linear-gradient(45deg, var(--primary), #2ce88e);
+        color: white;
+        padding: 1rem 2.5rem;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 20px rgba(29, 191, 115, 0.3);
+    }
+
+    .contact-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 30px rgba(29, 191, 115, 0.4);
+    }
+
+    .contact-btn.pulse {
+        animation: btnPulse 2s infinite;
+    }
+
+    @keyframes btnPulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 3rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    .footer-section h3 {
+        color: var(--primary);
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        position: relative;
+    }
+
+    .footer-section h3::after {
+        content: '';
+        position: absolute;
+        bottom: -0.5rem;
+        left: 0;
+        width: 50px;
+        height: 3px;
+        background: var(--primary);
+        border-radius: 2px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .contact-icon-wrapper {
+        position: relative;
+        width: 50px;
+        height: 50px;
+    }
+
+    .contact-icon {
+        width: 100%;
+        height: 100%;
+        background: rgba(255,255,255,0.1);
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        position: relative;
+        z-index: 1;
+        transition: all 0.3s ease;
+    }
+
+    .icon-glow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--primary);
+        border-radius: 15px;
+        filter: blur(10px);
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .contact-item:hover .icon-glow {
+        opacity: 0.3;
+    }
+
+    .contact-item:hover .contact-icon {
+        transform: translateY(-3px);
+    }
+
+    .contact-link {
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .contact-link:hover {
+        color: var(--primary);
+    }
+
+    .quick-links {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .footer-link {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        padding: 0.5rem;
+        border-radius: 10px;
+    }
+
+    .footer-link:hover {
+        background: rgba(255,255,255,0.1);
+        transform: translateX(10px);
+    }
+
+    .link-icon-wrapper {
+        position: relative;
+        width: 40px;
+        height: 40px;
+    }
+
+    .link-icon {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    .icon-pulse {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--primary);
+        border-radius: 50%;
+        filter: blur(10px);
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .footer-link:hover .icon-pulse {
+        opacity: 0.3;
+    }
+
+    .social-links {
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .social-btn {
+        width: 50px;
+        height: 50px;
+        background: rgba(255,255,255,0.1);
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .social-icon {
+        width: 24px;
+        height: 24px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .btn-glow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--primary);
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .social-btn:hover {
+        transform: translateY(-5px);
+    }
+
+    .social-btn:hover .btn-glow {
+        opacity: 1;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        padding-top: 2rem;
+        margin-top: 2rem;
+        border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    @media (max-width: 768px) {
+        .contact-cta {
+            position: relative;
+            top: 0;
+            margin: -4rem 1rem 2rem;
+        }
+
+        .contact-bubble {
+            padding: 2rem;
+        }
+
+        .footer-content {
+            grid-template-columns: 1fr;
+            text-align: center;
+            gap: 4rem;
+        }
+
+        .footer-section h3::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .contact-item {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .social-links {
+            justify-content: center;
+        }
+    }
+    </style>
+</footer>
   
 <script>
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -2065,7 +6105,7 @@ const observer = new IntersectionObserver(entries => {
 
 // Observe all animated elements
 const animatedElements = document.querySelectorAll(
-    '.service-card, .portfolio-item, .review-card, .timeline-item, .dashboard-card, .stat'
+    '.service-card, .portfolio-item, .review-card, .timeline-item, .dashboard-card, .stat, .workflow-item'
 );
 
 animatedElements.forEach(element => {
@@ -2253,5 +6293,64 @@ function animateWhatsappBubbles() {
 document.addEventListener('DOMContentLoaded', () => {
   animateWhatsappBubbles();
 });
+
+// Initialize skill rings animation
+function initSkillRings() {
+  const rings = document.querySelectorAll('.skill-ring-progress');
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const circle = entry.target;
+        const percent = circle.getAttribute('data-percent');
+        const circumference = 2 * Math.PI * 45; // 45 is the radius
+        const offset = circumference - (percent / 100) * circumference;
+        
+        // Add animation class
+        circle.style.transition = 'stroke-dashoffset 1.5s ease-in-out';
+        circle.style.strokeDashoffset = offset;
+        
+        // Add hover effect to parent skill item
+        const skillItem = circle.closest('.skill-item');
+        if (skillItem) {
+          skillItem.addEventListener('mouseenter', () => {
+            circle.style.filter = 'drop-shadow(0 0 10px rgba(29, 191, 115, 0.4))';
+          });
+          skillItem.addEventListener('mouseleave', () => {
+            circle.style.filter = 'none';
+          });
+        }
+        
+        // Unobserve after animation
+        observer.unobserve(circle);
+      }
+    });
+  }, {
+    threshold: 0.5
+  });
+
+  rings.forEach(ring => observer.observe(ring));
+}
+
+// Call the function when document loads
+document.addEventListener('DOMContentLoaded', initSkillRings);
+
+// Process workflow animation enhancements
+function initWorkflowAnimations() {
+  const workflowItems = document.querySelectorAll('.workflow-item');
+  
+  const observerWorkflow = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  workflowItems.forEach(item => observerWorkflow.observe(item));
+}
+
+// Initialize the workflow animations when document loads
+document.addEventListener('DOMContentLoaded', initWorkflowAnimations);
 </script>
 </body></html>
