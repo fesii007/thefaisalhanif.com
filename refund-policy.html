@@ -3,27 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Refund Policy</title>
+    <title>Terms & Conditions</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
-        h1, h2 { color: #2c3e50; }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 900px;
+            padding: 40px;
+            background: linear-gradient(135deg, #111, #222);
+            border-radius: 15px;
+            box-shadow: 0px 0px 25px rgba(0, 255, 0, 0.8);
+            animation: fadeIn 1.2s ease-in-out;
+            transform-origin: center;
+        }
+        h1, h2 {
+            color: #00ff00;
+            text-align: center;
+        }
+        p, ul {
+            font-size: 1.1em;
+            opacity: 0;
+            animation: slideIn 1.2s ease-in-out forwards;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li:before {
+            content: '\25A0';
+            color: #00ff00;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+        .footer a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #00ff00;
+            color: #000;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: 0.3s;
+            margin-top: 15px;
+            display: block;
+            text-align: center;
+        }
+        .btn:hover {
+            background: #00cc00;
+        }
     </style>
 </head>
 <body>
-    <h1>Cancellation, Return, and Refund Policy</h1>
-    <p><strong>Effective Date:</strong> December 21, 2024</p>
-
-    <h2>1. Cancellation Policy</h2>
-    <p>Clients may cancel their order within 24 hours of payment for a full refund. After 24 hours, cancellations may be subject to a processing fee.</p>
-
-    <h2>2. Refund Policy</h2>
-    <ul>
-        <li>Refunds are only applicable if the project has not started.</li>
-        <li>No refunds will be issued once work has been delivered.</li>
-        <li>If you are dissatisfied, we offer revisions to meet your expectations.</li>
-    </ul>
-
-    <h2>3. Return Policy</h2>
-    <p>As we provide digital services, returns are not applicable.</p>
+    <div class="container">
+        <h1>Terms & Conditions</h1>
+        <p><strong>Effective Date:</strong> December 21, 2024</p>
+        <h2>1. User Agreement</h2>
+        <ul>
+            <li>By using this website, you agree to these terms.</li>
+            <li>Unauthorized use may result in legal action.</li>
+        </ul>
+        <h2>2. Limitation of Liability</h2>
+        <ul>
+            <li>We are not responsible for any damages caused by using this site.</li>
+            <li>Content is provided "as is" without guarantees.</li>
+        </ul>
+        <h2>3. Termination</h2>
+        <ul>
+            <li>We reserve the right to terminate accounts violating our terms.</li>
+            <li>All provisions of this agreement survive termination.</li>
+        </ul>
+        <a href="refund-policy.html" class="btn">View Refund Policy</a>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 TheFaisalHanif.com | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-and-conditions.html">Terms & Conditions</a> | <a href="refund-policy.html">Refund Policy</a></p>
+    </div>
 </body>
 </html>
